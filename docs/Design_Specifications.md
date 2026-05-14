@@ -1,13 +1,14 @@
 # Square Eyes
 
 All developers must adhere to these design specifications when implementing the website. The design specifications are made by the UX/UI team and approved by the Product Owner. This document outlines the visual design system including typography, colour palette, spacing, and component specifications for the Square Eyes website.
+
 ***
 
 ## Colour Palette
 
 ### Brand
 - **Primary:** #FF9900
-- **Usage:** Buttons, links, hover states, active nav, star ratings, badges
+- **Usage:** Buttons, links, hover states, active nav, ratings, badges
 
 ### Text
 #### Primary
@@ -16,7 +17,7 @@ All developers must adhere to these design specifications when implementing the 
 
 #### Muted
 - **Colour:** #1B1B1A at 70% opacity
-- **Usage:** Subtext, descriptions, placeholders
+- **Usage:** Subtext, descriptions, placeholders, original sale price
 
 ### Background
 - **Page:** #FCFBF4
@@ -83,15 +84,15 @@ All developers must adhere to these design specifications when implementing the 
 ## Spacing (8-point scale)
 **Root font size:** 16px. All spacing values should be implemented in rem in CSS.
 
-| Scale | Value | rem | Usage |
-|-------|-------|-----|-------|
-| 1 | 4px | 0.25rem | Star gap, border radius on buttons and badges |
-| 2 | 8px | 0.5rem | Gap between card elements (badge→title, title→stars, stars→button) |
-| 3 | 16px | 1rem | Card internal padding, gap between input and subscribe button |
-| 4 | 24px | 1.5rem | Gap between cards |
-| 5 | 32px | 2rem | Newsletter gap between text and form, mobile section padding |
-| 6 | 48px | 3rem | Section padding top and bottom |
-| 7 | 64px | 4rem | Hero padding, page horizontal margins |
+| Scale | Value | rem | Usage                                                                |
+|-------|-------|-----|----------------------------------------------------------------------|
+| 1 | 4px | 0.25rem | Rating gap, border radius on buttons and badges                      |
+| 2 | 8px | 0.5rem | Gap between card elements (badge→title, title→rating, rating→button) |
+| 3 | 16px | 1rem | Card internal padding, gap between input and subscribe button        |
+| 4 | 24px | 1.5rem | Gap between cards                                                    |
+| 5 | 32px | 2rem | Newsletter gap between text and form, mobile section padding         |
+| 6 | 48px | 3rem | Section padding top and bottom                                       |
+| 7 | 64px | 4rem | Hero padding, page horizontal margins                                |
 
 ***
 
@@ -118,7 +119,7 @@ All developers must adhere to these design specifications when implementing the 
 
 ### Hero
 - **Height:** 34.375rem–37.5rem desktop, 18.75rem–21.875rem mobile
-- **Gradient:** rgba(0,0,0,0.6) left to right, fading to transparent
+- **Gradient:** linear-gradient(to right, rgba(0,0,0,0.6), transparent)
 - **Content max-width:** 31.25rem
 
 ### Promo Banner
