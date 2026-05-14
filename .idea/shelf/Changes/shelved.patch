@@ -1,0 +1,892 @@
+Index: checkout.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Complete your purchase securely and quickly. Enter your payment details to finalize your order.\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Contact Us</title>\r\n    <link rel=\"stylesheet\" href=\"./css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header class=\"flex align-center justify-space-around\">\r\n    <img src=\"assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"index.html\">Home</a></li>\r\n            <li><a href=\"movies.html\">Movies</a></li>\r\n            <li><a href=\"contact.html\">Contact</a></li>\r\n            <li><a href=\"about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"left-and-right-cols-flex\">\r\n        <div class=\"flex flex-column\">\r\n            <h1>Complete your purchase</h1>\r\n            <form>\r\n                <div class=\"flex flex-column\">\r\n                    <label for=\"email\">Email</label>\r\n                    <input class=\"input-style\" id=\"email\" type=\"text\" placeholder=\"name@example.com\">\r\n                </div>\r\n                <div class=\"flex flex-column\">\r\n                    <label for=\"card-number\">Card Number</label>\r\n                    <input class=\"input-style\" id=\"card-number\" type=\"text\" pattern=\"\\d{16}\" title=\"Card number must be 16 digits\">\r\n                </div>\r\n                <div class=\"flex flex-row\">\r\n                    <div class=\"flex flex-column\">\r\n                        <label for=\"expiry-date\">Expiry Date</label>\r\n                        <!-- If we could use JS, I would have a own error message for if the user attempts to use a year that has expired (i.e. 01) -->\r\n                        <input class=\"input-style\" id=\"expiry-date\" type=\"text\" placeholder=\"MM/YY\" pattern=\"(0[1-9]|1[0-2])\\/2[0-9]\" title=\"Please enter a valid expiry date in MM/YY format\">\r\n                    </div>\r\n                    <div class=\"flex flex-column flex-grow\">\r\n                        <label for=\"cvv\">CVV</label>\r\n                        <input class=\"input-style\" id=\"cvv\" type=\"text\" pattern=\"\\d{3}\" title=\"CVV must be 3 digits\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"flex flex-column\">\r\n                    <a href=\"checkout-success.html\" class=\"button\">complete purchase</a>\r\n                </div>\r\n            </form>\r\n        </div>\r\n        <div id=\"order-summary\">\r\n            <h2 class=\"m-0\">order summary</h2>\r\n            <div>\r\n                <p>Toy Story 3</p>\r\n                <p>€19,99</p>\r\n            </div>\r\n            <div>\r\n                <p>Godzilla: King Of The Monsters</p>\r\n                <p>€19,99</p>\r\n            </div>\r\n            <div>\r\n                <p>Batman: Unmask The Truth</p>\r\n                <p>€19,99</p>\r\n            </div>\r\n            <div class=\"text-bold\">\r\n                <p>Total</p>\r\n                <p>€59,97</p>\r\n            </div>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/checkout.html b/checkout.html
+--- a/checkout.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/checkout.html	(date 1758451149321)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Complete your purchase securely and quickly. Enter your payment details to finalize your order.">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Contact Us</title>
+-    <link rel="stylesheet" href="./css/styles.css">
++    <link rel="stylesheet" href="src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header class="flex align-center justify-space-around">
+-    <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="index.html">Home</a></li>
+Index: movie.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movie.html b/movie.html
+new file mode 100644
+--- /dev/null	(date 1758952883581)
++++ b/movie.html	(date 1758952883581)
+@@ -0,0 +1,99 @@
++<!DOCTYPE html>
++<html lang="en">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="description" content="">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Square Eyes - Batman: Unmask The Truth</title>
++    <link rel="stylesheet" href="./src/css/styles.css">
++    <script src="./src/scripts/movie.js" type="module" defer></script>
++    <script src="./src/scripts/apiClient.js" type="module" defer></script>
++</head>
++
++<body>
++<header>
++    <img src="./src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <nav class="hide-on-mobile">
++        <ul class="flex">
++            <li><a href="./index.html">Home</a></li>
++            <li><a class="active-tab" href="./movies.html">Movies</a></li>
++            <li><a href="./contact.html">Contact</a></li>
++            <li><a href="./about.html">About</a></li>
++            <li>
++                <a href="./checkout.html" aria-label="Go to checkout">
++                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
++                        <path d="M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z" fill="#1B1B1A" />
++                    </svg>
++                </a>
++            </li>
++        </ul>
++    </nav>
++    <label class="hamburger-menu" aria-label="Toggle mobile navigation menu">
++        <input type="checkbox">
++    </label>
++    <aside class="sidebar">
++        <nav>
++            <ul>
++                <li>
++                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 40 34" fill="none">
++                        <path d="M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z" fill="black" />
++                    </svg>
++                    <a class="active-tab" href="./index.html">Home</a>
++                </li>
++                <li>
++                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="28" viewBox="0 0 40 32" fill="none">
++                        <path d="M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z" fill="black" />
++                    </svg>
++                    <a href="./movies.html">Movies</a>
++                </li>
++                <li>
++                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 40 32" fill="none">
++                        <path d="M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z" fill="black" />
++                    </svg>
++                    <a href="./contact.html">Contact</a>
++                </li>
++                <li>
++                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 40 40" fill="none">
++                        <path d="M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z" fill="black" />
++                    </svg>
++                    <a href="./about.html">About</a>
++                </li>
++                <li>
++                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 40 40" fill="none">
++                        <path d="M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z" fill="#1B1B1A" />
++                    </svg>
++                    <a href="./checkout.html">Cart</a>
++                </li>
++            </ul>
++        </nav>
++    </aside>
++</header>
++<main class="centered-grid-layout">
++    <section class="movie-description-content">
++        <img id="movie-image" src="" alt="">
++        <div class="movie-description-container">
++            <h1 id="movie-title"></h1>
++            <p id="movie-description"></p>
++            <p id="movie-price" class="text-bold"></p>
++            <a href="./checkout.html" class="button">add to cart</a>
++        </div>
++    </section>
++</main>
++<footer>
++    <div id="newsletter" class="centered-grid-layout">
++        <div class="flex flex-column m-t-b-1">
++            <span id="newsletter-header" class="text-bold text-uppercase">be the first to experience our latest movies</span>
++            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>
++            <div id="newsletter-input-container">
++                <input class="input-style" type="text" placeholder="name@example.com" aria-label="Email address">
++                <button class="button" type="button"> subscribe</button>
++            </div>
++        </div>
++    </div>
++    <div class="flex">
++        <span id="copyright">Copyright © 2025 Square Eyes</span>
++    </div>
++</footer>
++</body>
++</html>
+\ No newline at end of file
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Discover and purchase unique, high-quality movies at affordable prices while supporting small filmmakers. Explore our latest movie collections and enjoy an unforgettable viewing experience.\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Home</title>\r\n    <link rel=\"stylesheet\" href=\"./css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a class=\"active-tab\" href=\"index.html\">Home</a></li>\r\n            <li><a href=\"movies.html\">Movies</a></li>\r\n            <li><a href=\"contact.html\">Contact</a></li>\r\n            <li><a href=\"about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"hero\">\r\n        <div class=\"hero-content\">\r\n            <h1>Discover fresh, unforgettable movies</h1>\r\n            <p>Discover unique, high-quality movies at affordable prices while supporting small filmmakers.</p>\r\n            <a href=\"movies.html\" class=\"button\">start watching</a>\r\n        </div>\r\n    </section>\r\n    <section>\r\n        <h2>latest movies</h2>\r\n        <div class=\"movies-container\">\r\n            <div class=\"movie-card\">\r\n                <a href=\"movies/batman.html\">\r\n                    <img src=\"./assets/images/Batman.jpeg\" alt=\"Batman: Unmask The Truth movie cover, leading to the movie description page\">\r\n                </a>\r\n                <p><a href=\"movies/batman.html\">batman: unmask the truth</a></p>\r\n                <p>€19,99</p>\r\n                <a href=\"checkout.html\" class=\"button\">add to cart</a>\r\n            </div>\r\n            <div class=\"movie-card\">\r\n                <a href=\"movies/godzilla.html\">\r\n                    <img src=\"./assets/images/Godzilla.jpeg\" alt=\"Godzilla: King Of The Monsters movie cover, leading to the movie description page\">\r\n                </a>\r\n                <p><a href=\"movies/godzilla.html\">godzilla: king of the monsters</a></p>\r\n                <p>€19,99</p>\r\n                <a href=\"checkout.html\" class=\"button\">add to cart</a>\r\n            </div>\r\n            <div class=\"movie-card\">\r\n                <a href=\"movies/sweetheart.html\">\r\n                    <img src=\"./assets/images/Sweetheart.jpeg\" alt=\"Sweetheart movie cover, leading to the movie description page\">\r\n                </a>\r\n                <p><a href=\"movies/sweetheart.html\">sweetheart</a></p>\r\n                <p>€19,99</p>\r\n                <a href=\"checkout.html\" class=\"button\">add to cart</a>\r\n            </div>\r\n            <div class=\"movie-card\">\r\n                <a href=\"movies/scream.html\">\r\n                    <img src=\"./assets/images/Scream.jpeg\" alt=\"Scream movie cover, leading to the movie description page\">\r\n                </a>\r\n                <p><a href=\"movies/scream.html\">scream</a></p>\r\n                <p>€19,99</p>\r\n                <a href=\"checkout.html\" class=\"button\">add to cart</a>\r\n            </div>\r\n        </div>\r\n    </section>\r\n    <section class=\"secondary-hero\">\r\n        <h1>...and many more amazing high quality movies</h1>\r\n        <a href=\"movies.html\" class=\"button button-lg\">explore our shop</a>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.html b/index.html
+--- a/index.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/index.html	(date 1758976249651)
+@@ -6,12 +6,13 @@
+     <meta name="description" content="Discover and purchase unique, high-quality movies at affordable prices while supporting small filmmakers. Explore our latest movie collections and enjoy an unforgettable viewing experience.">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Home</title>
+-    <link rel="stylesheet" href="./css/styles.css">
++    <link rel="stylesheet" href="src/css/styles.css">
++    <script src="src/scripts/index.js" type="module" defer></script>
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a class="active-tab" href="index.html">Home</a></li>
+@@ -74,40 +75,10 @@
+         </div>
+     </section>
+     <section>
+-        <h2>latest movies</h2>
+-        <div class="movies-container">
+-            <div class="movie-card">
+-                <a href="movies/batman.html">
+-                    <img src="./assets/images/Batman.jpeg" alt="Batman: Unmask The Truth movie cover, leading to the movie description page">
+-                </a>
+-                <p><a href="movies/batman.html">batman: unmask the truth</a></p>
+-                <p>€19,99</p>
+-                <a href="checkout.html" class="button">add to cart</a>
+-            </div>
+-            <div class="movie-card">
+-                <a href="movies/godzilla.html">
+-                    <img src="./assets/images/Godzilla.jpeg" alt="Godzilla: King Of The Monsters movie cover, leading to the movie description page">
+-                </a>
+-                <p><a href="movies/godzilla.html">godzilla: king of the monsters</a></p>
+-                <p>€19,99</p>
+-                <a href="checkout.html" class="button">add to cart</a>
+-            </div>
+-            <div class="movie-card">
+-                <a href="movies/sweetheart.html">
+-                    <img src="./assets/images/Sweetheart.jpeg" alt="Sweetheart movie cover, leading to the movie description page">
+-                </a>
+-                <p><a href="movies/sweetheart.html">sweetheart</a></p>
+-                <p>€19,99</p>
+-                <a href="checkout.html" class="button">add to cart</a>
+-            </div>
+-            <div class="movie-card">
+-                <a href="movies/scream.html">
+-                    <img src="./assets/images/Scream.jpeg" alt="Scream movie cover, leading to the movie description page">
+-                </a>
+-                <p><a href="movies/scream.html">scream</a></p>
+-                <p>€19,99</p>
+-                <a href="checkout.html" class="button">add to cart</a>
+-            </div>
++        <h2 id="hidden-until-loaded" class="hidden">latest movies</h2>
++        <div id="movies-container">
++            <p id="loading">Loading list of movies...</p>
++            <!-- Top 4 movies will be dynamically inserted here -->
+         </div>
+     </section>
+     <section class="secondary-hero">
+Index: movies/toystory4.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Toy Story 4 movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Toy Story 4</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"../index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"../checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/Toy%20Story%204.jpeg\" alt=\"Toy Story 4 movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>toy story 4</h1>\r\n            <p>\r\n                When Woody, Buzz, and the gang join Bonnie on a road trip, they meet Forky, a craft-project-turned-toy\r\n                who struggles with his new identity. As Woody tries to help Forky understand his role, they encounter\r\n                old friends and new adventures. Woody is reunited with Bo Peep, and he must decide where his true\r\n                loyalties lie.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/toystory4.html b/movies/toystory4.html
+--- a/movies/toystory4.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/toystory4.html	(date 1758451149364)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Toy Story 4 movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Toy Story 4</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/Toy%20Story%204.jpeg" alt="Toy Story 4 movie cover">
++        <img src="../src/assets/images/Toy%20Story%204.jpeg" alt="Toy Story 4 movie cover">
+         <div class="movie-description-container">
+             <h1>toy story 4</h1>
+             <p>
+Index: src/scripts/movie.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/scripts/movie.js b/src/scripts/movie.js
+new file mode 100644
+--- /dev/null	(date 1758977509939)
++++ b/src/scripts/movie.js	(date 1758977509939)
+@@ -0,0 +1,36 @@
++import { ApiClient } from './apiClient.js';
++
++class Movie {
++    constructor (movieId) {
++        this.movieId = movieId;
++    }
++
++    async init () {
++        const movie = await new ApiClient().get(this.movieId);
++        if (!movie)
++            throw new Error(`Error occurred when retrieving movie data: ${movie}`);
++
++        try {
++            const metaData = document.querySelector('meta');
++            metaData.setAttribute('content', `${movie.data.title} movie description page`);
++            metaData.setAttribute('title', `${movie.data.title} movie details`);
++            document.getElementById('movie-title').innerText = movie.data.title;
++            document.getElementById('movie-description').innerText = movie.data.description;
++            document.getElementById('movie-price').innerText = `${movie.data.price},-`;
++            document.getElementById('movie-image').src = movie.data.image.url?.length > 0
++                ? movie.data.image.url
++                : '';
++            document.getElementById('movie-image').alt = movie.data.image.alt?.length > 0
++                ? movie.data.image.alt
++                : `${movie.data.title} movie cover`;
++        } catch (err) {
++            throw new Error('Unexpected error occurred when loading movie details.');
++        }
++    }
++}
++
++document.addEventListener('DOMContentLoaded', async () => {
++    const parameters = new URLSearchParams(window.location.search);
++    const movie = new Movie(parameters.get('id'));
++    await movie.init();
++});
+\ No newline at end of file
+Index: checkout-success.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Thank you for your purchase! Your order has been successfully completed. Find out more about your order details and next steps.\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Purchase Completed</title>\r\n    <link rel=\"stylesheet\" href=\"./css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header class=\"flex align-center justify-space-around\">\r\n    <img src=\"assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"index.html\">Home</a></li>\r\n            <li><a href=\"movies.html\">Movies</a></li>\r\n            <li><a href=\"contact.html\">Contact</a></li>\r\n            <li><a href=\"about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"flex flex-column\">\r\n        <h1>thank you for your purchase!</h1>\r\n        <p>\r\n            We will email you an order confirmation shortly.<br>\r\n            You will be able to access the purchased content in your library once you log in with the supplied email\r\n            address.\r\n        </p>\r\n        <p>\r\n            If you do not have an account registered with us, then a separate email with a registration link will be\r\n            sent to the supplied email address.<br>Please check your spam folder in case you have not received an\r\n            email from us.\r\n        </p>\r\n        <a class=\"m-t-1 text-bold\" href=\"index.html\">Click here to go back to the home page</a>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/checkout-success.html b/checkout-success.html
+--- a/checkout-success.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/checkout-success.html	(date 1758451149309)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Thank you for your purchase! Your order has been successfully completed. Find out more about your order details and next steps.">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Purchase Completed</title>
+-    <link rel="stylesheet" href="./css/styles.css">
++    <link rel="stylesheet" href="src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header class="flex align-center justify-space-around">
+-    <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="index.html">Home</a></li>
+Index: movies/sweetheart.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Sweetheart movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Sweetheart</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"../index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"../checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/Sweetheart.jpeg\" alt=\"Sweetheart movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>sweetheart</h1>\r\n            <p>\r\n                After washing ashore on a deserted island, Jennifer must navigate the perils of survival while being\r\n                hunted by a mysterious sea creature. As she battles the elements and the monster, Jennifer’s resilience\r\n                and resourcefulness are put to the ultimate test.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/sweetheart.html b/movies/sweetheart.html
+--- a/movies/sweetheart.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/sweetheart.html	(date 1758451149338)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Sweetheart movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Sweetheart</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/Sweetheart.jpeg" alt="Sweetheart movie cover">
++        <img src="../src/assets/images/Sweetheart.jpeg" alt="Sweetheart movie cover">
+         <div class="movie-description-container">
+             <h1>sweetheart</h1>
+             <p>
+Index: css/styles.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/styles.css b/src/css/styles.css
+rename from css/styles.css
+rename to src/css/styles.css
+--- a/css/styles.css	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/src/css/styles.css	(date 1758975907010)
+@@ -1,12 +1,12 @@
+ /* Use import to split up your CSS into manageable chunks */
+-@import url("./reset.css");
++@import url("reset.css");
+ /* Files that are only needed to be imported are called partials */
+ /* These are marked with an underscore: */
+-@import url("./variables.css");
++@import url("variables.css");
+ /* Feel free to add as many of these imports as you need */
+-@import url("./utilities.css");
+-@import url("./typography.css");
+-@import url("./hamburger-menu.css");
++@import url("utilities.css");
++@import url("typography.css");
++@import url("hamburger-menu.css");
+ 
+ body {
+     background-color: var(--color-background-primary);
+@@ -130,7 +130,7 @@
+     text-decoration: none;
+ }
+ 
+-.movies-container {
++#movies-container {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-areas: "movie1 movie2 movie3 movie4";
+@@ -261,8 +261,16 @@
+     gap: var(--gap-md);
+ }
+ 
++.hidden {
++    display: none;
++}
++
++#loading {
++    font-size: 1.5rem; font-weight: bold;
++}
++
+ @media (max-width: 1024px) {
+-    .movies-container {
++    #movies-container {
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-areas: 
+             "movie1 movie2 movie3"
+@@ -294,7 +302,7 @@
+         flex-direction: column;
+     }
+ 
+-    .movies-container {
++    #movies-container {
+         grid-template-columns: repeat(2, 1fr);
+         grid-template-areas: 
+             "movie1 movie2"
+@@ -331,7 +339,7 @@
+         padding: 4rem 1.50rem;
+     }
+     
+-    .movies-container {
++    #movies-container {
+         grid-template-columns: 1fr;
+         grid-template-areas:
+             "movie1"
+Index: src/scripts/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/scripts/index.js b/src/scripts/index.js
+new file mode 100644
+--- /dev/null	(date 1758977622786)
++++ b/src/scripts/index.js	(date 1758977622786)
+@@ -0,0 +1,53 @@
++import { ApiClient } from './apiClient.js';
++
++class Home {
++    async init () {
++        let filteredMovies;
++        const apiClient = new ApiClient();
++        try {
++            // No parameter required to fetch all movies.
++            const response = await apiClient.get('');
++
++            // Rather than making several requests to the API, we filter the movies we want from the full list.
++            const allowedTitles = [
++                'The Batman',
++                'Godzilla: King of the Monsters',
++                'Scream',
++                'Sweetheart'
++            ];
++
++            filteredMovies = response.data
++                .filter(movie => allowedTitles.includes(movie.title));
++        } catch (e) {
++            console.error(e.message);
++            // Fallback, just in case the loading indicator element is not found in the DOM.
++            const loadingIndicator = document.getElementById('loading-indicator');
++            loadingIndicator
++                ? loadingIndicator.innerText = 'Failed to load movies. Please try again later.'
++                : alert('Failed to load movies. Please try again later.');
++            return;
++        }
++
++        // Populating the list of movies. Replaces the loading indicator with the actual content once loaded.
++        const moviesContainer = document.getElementById('movies-container');
++        moviesContainer.innerHTML = filteredMovies.map(movie => `
++            <div class="movie-card">
++                <a href="movie.html?id=${movie.id}">
++                    <img src=${movie.image.url} alt=${movie.image.alt?.length < 0 ?? movie.title} movie cover image" />
++                </a>
++                <p><a href="movies.html?id=${movie.id}">${movie.title}</a></p>
++                <p>${movie.price},-</p>
++                <a href="checkout.html" class="button">add to cart</a>
++            </div>
++        `).join('');
++
++        // Removes the loading indicator once the list has been populated.
++        if (moviesContainer.innerText && filteredMovies.length > 0)
++            document.getElementById('hidden-until-loaded').classList.remove('hidden');
++    }
++}
++
++document.addEventListener('DOMContentLoaded', async () => {
++    const home = new Home();
++    await home.init();
++});
+\ No newline at end of file
+Index: movies/scream.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Scream movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Scream</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"../index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"../checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/Scream.jpeg\" alt=\"Scream movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>scream</h1>\r\n            <p>\r\n                In the small town of Woodsboro, a masked killer known as Ghostface begins targeting high school student\r\n                Sidney Prescott and her friends. As the body count rises, Sidney and her friends must navigate a series\r\n                of terrifying phone calls and deadly encounters, all while uncovering the dark secrets of their town.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/scream.html b/movies/scream.html
+--- a/movies/scream.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/scream.html	(date 1758451149327)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Scream movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Scream</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/Scream.jpeg" alt="Scream movie cover">
++        <img src="../src/assets/images/Scream.jpeg" alt="Scream movie cover">
+         <div class="movie-description-container">
+             <h1>scream</h1>
+             <p>
+Index: src/scripts/apiClient.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/scripts/apiClient.js b/src/scripts/apiClient.js
+new file mode 100644
+--- /dev/null	(date 1758975476925)
++++ b/src/scripts/apiClient.js	(date 1758975476925)
+@@ -0,0 +1,14 @@
++export class ApiClient {
++    constructor () {
++        this.baseUrl = "https://v2.api.noroff.dev/square-eyes/";
++    }
++    
++    async get (endpoint) {
++        const response = await fetch(`${this.baseUrl}${endpoint}`);
++        if (!response.ok) {
++            throw new Error(`Error occurred when retrieving data: ${response.statusText}`);
++        }
++        
++        return await response.json();
++    }
++}
+\ No newline at end of file
+Index: movies/onceuponatimeinhollywood.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Once Upon A Time In Hollywood movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Once Upon A Time In Hollywood</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"../index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"../checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/Once%20Upon%20A%20Time%20In%20Hollywood.jpeg\" alt=\"Once Upon A Time In Hollywood movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>once upon a time in hollywood</h1>\r\n            <p>\r\n                Set in 1969 Los Angeles, this Quentin Tarantino film follows fading TV star Rick Dalton and his stunt\r\n                double, Cliff Booth, as they navigate the rapidly changing film industry. Their lives intersect with\r\n                several real-life figures, including actress Sharon Tate, against the backdrop of the infamous Manson\r\n                Family murders.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/onceuponatimeinhollywood.html b/movies/onceuponatimeinhollywood.html
+--- a/movies/onceuponatimeinhollywood.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/onceuponatimeinhollywood.html	(date 1758451149356)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Once Upon A Time In Hollywood movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Once Upon A Time In Hollywood</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/Once%20Upon%20A%20Time%20In%20Hollywood.jpeg" alt="Once Upon A Time In Hollywood movie cover">
++        <img src="../src/assets/images/Once%20Upon%20A%20Time%20In%20Hollywood.jpeg" alt="Once Upon A Time In Hollywood movie cover">
+         <div class="movie-description-container">
+             <h1>once upon a time in hollywood</h1>
+             <p>
+Index: movies/hobbsandshaw.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Once Upon A Time In Hollywood movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Once Upon A Time In Hollywood</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"../index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"../checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/Hobbs%20and%20Shaw.jpeg\" alt=\"Once Upon A Time In Hollywood movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>hobbs & shaw</h1>\r\n            <p>\r\n                In this high-octane spin-off from the Fast & Furious franchise, lawman Luke Hobbs and outcast Deckard\r\n                Shaw form an unlikely alliance to take down Brixton Lore, a cyber-genetically enhanced villain\r\n                threatening the future of humanity. With non-stop action and thrilling stunts, Hobbs and Shaw must put\r\n                aside their differences to save the world.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/hobbsandshaw.html b/movies/hobbsandshaw.html
+--- a/movies/hobbsandshaw.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/hobbsandshaw.html	(date 1758451149413)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Once Upon A Time In Hollywood movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Once Upon A Time In Hollywood</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/Hobbs%20and%20Shaw.jpeg" alt="Once Upon A Time In Hollywood movie cover">
++        <img src="../src/assets/images/Hobbs%20and%20Shaw.jpeg" alt="Once Upon A Time In Hollywood movie cover">
+         <div class="movie-description-container">
+             <h1>hobbs & shaw</h1>
+             <p>
+Index: movies/godzilla.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Godzilla: King Of The Monsters movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Godzilla: King Of The Monsters</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"../index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"../checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/Godzilla.jpeg\" alt=\"Godzilla: King Of The Monsters movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>godzilla: king of the monsters</h1>\r\n            <p>\r\n                In this epic monster showdown, the crypto-zoological agency Monarch faces off against a battery of\r\n                god-sized creatures. As the mighty Godzilla collides with Mothra, Rodan, and his ultimate nemesis, the\r\n                three-headed King Ghidorah, humanity’s very survival hangs in the balance. The film explores the\r\n                struggle between these titanic forces and the impact on the world around them.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/godzilla.html b/movies/godzilla.html
+--- a/movies/godzilla.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/godzilla.html	(date 1758451149345)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Godzilla: King Of The Monsters movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Godzilla: King Of The Monsters</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/Godzilla.jpeg" alt="Godzilla: King Of The Monsters movie cover">
++        <img src="../src/assets/images/Godzilla.jpeg" alt="Godzilla: King Of The Monsters movie cover">
+         <div class="movie-description-container">
+             <h1>godzilla: king of the monsters</h1>
+             <p>
+Index: movies/batman.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Batman: Unmask The Truth movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Batman: Unmask The Truth</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"../index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"../about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"../checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/Batman.jpeg\" alt=\"Batman: Unmask The Truth movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>Batman: Unmask The Truth</h1>\r\n            <p>\r\n                When a sadistic serial killer begins targeting Gotham’s elite, Batman is drawn into a complex\r\n                investigation. As he follows a trail of cryptic clues, he uncovers deep-seated corruption within the\r\n                city and questions his own family’s involvement. Along the way, he encounters iconic characters like\r\n                Catwoman, the Penguin, and the Riddler, each with their own secrets and agendas.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/batman.html b/movies/batman.html
+--- a/movies/batman.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/batman.html	(date 1758451149398)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Batman: Unmask The Truth movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Batman: Unmask The Truth</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/Batman.jpeg" alt="Batman: Unmask The Truth movie cover">
++        <img src="../src/assets/images/Batman.jpeg" alt="Batman: Unmask The Truth movie cover">
+         <div class="movie-description-container">
+             <h1>Batman: Unmask The Truth</h1>
+             <p>
+Index: movies/addamsfamilyhalloween.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"The Addams Family Halloween movie description\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - The Addams Family Halloween</title>\r\n    <link rel=\"stylesheet\" href=\"../css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header>\r\n    <img src=\"../assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"../index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"../movies.html\">Movies</a></li>\r\n            <li><a href=\"../contact.html\">Contact</a></li>\r\n            <li><a href=\"../about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"../checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"movie-description-content\">\r\n        <img src=\"../assets/images/The%20Addams%20Family%20Halloween.jpeg\" alt=\"The Addams Family Halloween movie cover\">\r\n        <div class=\"movie-description-container\">\r\n            <h1>the addams family halloween</h1>\r\n            <p>\r\n                In this 1977 TV movie, the Addams Family prepares for Halloween in their unique and spooky style.\r\n                Gomez’s brother, Pancho, stays with the family while Gomez attends a lodge meeting. Meanwhile, crooks\r\n                plot to steal the family fortune by bugging the house and sending in a fake Gomez and Morticia. As the\r\n                Addamses celebrate Halloween with their usual eccentric flair, they must thwart the crooks’ plans and\r\n                enjoy their favourite holiday.\r\n            </p>\r\n            <p class=\"text-bold\">€19,99</p>\r\n            <a href=\"../checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies/addamsfamilyhalloween.html b/movies/addamsfamilyhalloween.html
+--- a/movies/addamsfamilyhalloween.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies/addamsfamilyhalloween.html	(date 1758451149391)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="The Addams Family Halloween movie description">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - The Addams Family Halloween</title>
+-    <link rel="stylesheet" href="../css/styles.css">
++    <link rel="stylesheet" href="../src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header>
+-    <img src="../assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="../src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="../index.html">Home</a></li>
+@@ -67,7 +67,7 @@
+ </header>
+ <main class="centered-grid-layout">
+     <section class="movie-description-content">
+-        <img src="../assets/images/The%20Addams%20Family%20Halloween.jpeg" alt="The Addams Family Halloween movie cover">
++        <img src="../src/assets/images/The%20Addams%20Family%20Halloween.jpeg" alt="The Addams Family Halloween movie cover">
+         <div class="movie-description-container">
+             <h1>the addams family halloween</h1>
+             <p>
+Index: about.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Learn more about Square Eyes, our mission, and our commitment to providing unique, high-quality movies.\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - About Us</title>\r\n    <link rel=\"stylesheet\" href=\"./css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header class=\"flex align-center justify-space-around\">\r\n    <img src=\"assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"index.html\">Home</a></li>\r\n            <li><a href=\"movies.html\">Movies</a></li>\r\n            <li><a href=\"contact.html\">Contact</a></li>\r\n            <li><a class=\"active-tab\" href=\"about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <section class=\"flex flex-column\">\r\n        <h1>about us</h1>\r\n        <h2>discover unique films</h2>\r\n        <p>Welcome to Square Eyes, your premier destination for high-quality videos directly from the\r\n            creators themselves. Our platform is designed for those who want instant access to a diverse range of\r\n            films, allowing you to purchase and watch your favourite content online right away.</p>\r\n        <h2>support small filmmakers</h2>\r\n        <p>At Square Eyes, we believe in supporting small filmmakers and showcasing their unique voices. Our\r\n            curated collections and easy-to-navigate categories make it simple to discover hidden gems and explore a\r\n            wide variety of genres. Whether you’re looking for the latest indie hits or timeless classics, you’ll\r\n            find it all here.</p>\r\n        <h2>seamless viewing experience</h2>\r\n        <p>Join us in celebrating the art of filmmaking and enjoy a seamless viewing experience with just a\r\n            few clicks. Dive into our extensive library and start your cinematic journey today!</p>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/about.html b/about.html
+--- a/about.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/about.html	(date 1758451149462)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Learn more about Square Eyes, our mission, and our commitment to providing unique, high-quality movies.">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - About Us</title>
+-    <link rel="stylesheet" href="./css/styles.css">
++    <link rel="stylesheet" href="src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header class="flex align-center justify-space-around">
+-    <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="index.html">Home</a></li>
+Index: movies.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Browse our extensive collection of unique, high-quality movies available for purchase.\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Movies</title>\r\n    <link rel=\"stylesheet\" href=\"./css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header class=\"flex align-center justify-space-around\">\r\n    <img src=\"assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"index.html\">Home</a></li>\r\n            <li><a class=\"active-tab\" href=\"movies.html\">Movies</a></li>\r\n            <li><a href=\"contact.html\">Contact</a></li>\r\n            <li><a href=\"about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <h1>Our collection of movies</h1>\r\n    <div class=\"movies-container\">\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/batman.html\">\r\n                <img src=\"./assets/images/Batman.jpeg\" alt=\"Batman: Unmask The Truth movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/batman.html\">batman: unmask the truth</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/godzilla.html\">\r\n                <img src=\"./assets/images/Godzilla.jpeg\" alt=\"Godzilla: King Of The Monsters movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/godzilla.html\">godzilla: king of the monsters</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/sweetheart.html\">\r\n                <img src=\"./assets/images/Sweetheart.jpeg\" alt=\"Sweetheart movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/sweetheart.html\">sweetheart</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/scream.html\">\r\n                <img src=\"./assets/images/Scream.jpeg\" alt=\"Scream movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/scream.html\">scream</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/onceuponatimeinhollywood.html\">\r\n                <img src=\"./assets/images/Once%20Upon%20A%20Time%20In%20Hollywood.jpeg\" alt=\"Once Upon A Time In Hollywood movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/onceuponatimeinhollywood.html\">once upon a time in hollywood</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/hobbsandshaw.html\">\r\n                <img src=\"./assets/images/Hobbs%20and%20Shaw.jpeg\" alt=\"Hobbs and Shaw movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/hobbsandshaw.html\">hobbs & shaw</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/addamsfamilyhalloween.html\">\r\n                <img src=\"./assets/images/The%20Addams%20Family%20Halloween.jpeg\" alt=\"The Addams Family Halloween movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/addamsfamilyhalloween.html\">the addams family halloween</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n        <div class=\"movie-card\">\r\n            <a href=\"movies/toystory4.html\">\r\n                <img src=\"./assets/images/Toy%20Story%204.jpeg\" alt=\"Toy Story 4 movie cover, leading to the movie description page\">\r\n            </a>\r\n            <p><a href=\"movies/toystory4.html\">toy story 4</a></p>\r\n            <p>€19,99</p>\r\n            <a href=\"./checkout.html\" class=\"button\">add to cart</a>\r\n        </div>\r\n    </div>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/movies.html b/movies.html
+--- a/movies.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/movies.html	(date 1758974987364)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Browse our extensive collection of unique, high-quality movies available for purchase.">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Movies</title>
+-    <link rel="stylesheet" href="./css/styles.css">
++    <link rel="stylesheet" href="src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header class="flex align-center justify-space-around">
+-    <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="index.html">Home</a></li>
+@@ -66,11 +66,14 @@
+     </aside>
+ </header>
+ <main class="centered-grid-layout">
+-    <h1>Our collection of movies</h1>
+-    <div class="movies-container">
++    <div class="loading">
++        <p>Loading content...</p>
++        <h1 class="hidden">Our collection of movies</h1>
++    </div>
++    <div id="movies-container">
+         <div class="movie-card">
+             <a href="movies/batman.html">
+-                <img src="./assets/images/Batman.jpeg" alt="Batman: Unmask The Truth movie cover, leading to the movie description page">
++                <img src="src/assets/images/Batman.jpeg" alt="Batman: Unmask The Truth movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/batman.html">batman: unmask the truth</a></p>
+             <p>€19,99</p>
+@@ -78,7 +81,7 @@
+         </div>
+         <div class="movie-card">
+             <a href="movies/godzilla.html">
+-                <img src="./assets/images/Godzilla.jpeg" alt="Godzilla: King Of The Monsters movie cover, leading to the movie description page">
++                <img src="src/assets/images/Godzilla.jpeg" alt="Godzilla: King Of The Monsters movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/godzilla.html">godzilla: king of the monsters</a></p>
+             <p>€19,99</p>
+@@ -86,7 +89,7 @@
+         </div>
+         <div class="movie-card">
+             <a href="movies/sweetheart.html">
+-                <img src="./assets/images/Sweetheart.jpeg" alt="Sweetheart movie cover, leading to the movie description page">
++                <img src="src/assets/images/Sweetheart.jpeg" alt="Sweetheart movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/sweetheart.html">sweetheart</a></p>
+             <p>€19,99</p>
+@@ -94,7 +97,7 @@
+         </div>
+         <div class="movie-card">
+             <a href="movies/scream.html">
+-                <img src="./assets/images/Scream.jpeg" alt="Scream movie cover, leading to the movie description page">
++                <img src="src/assets/images/Scream.jpeg" alt="Scream movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/scream.html">scream</a></p>
+             <p>€19,99</p>
+@@ -102,7 +105,7 @@
+         </div>
+         <div class="movie-card">
+             <a href="movies/onceuponatimeinhollywood.html">
+-                <img src="./assets/images/Once%20Upon%20A%20Time%20In%20Hollywood.jpeg" alt="Once Upon A Time In Hollywood movie cover, leading to the movie description page">
++                <img src="src/assets/images/Once%20Upon%20A%20Time%20In%20Hollywood.jpeg" alt="Once Upon A Time In Hollywood movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/onceuponatimeinhollywood.html">once upon a time in hollywood</a></p>
+             <p>€19,99</p>
+@@ -110,7 +113,7 @@
+         </div>
+         <div class="movie-card">
+             <a href="movies/hobbsandshaw.html">
+-                <img src="./assets/images/Hobbs%20and%20Shaw.jpeg" alt="Hobbs and Shaw movie cover, leading to the movie description page">
++                <img src="src/assets/images/Hobbs%20and%20Shaw.jpeg" alt="Hobbs and Shaw movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/hobbsandshaw.html">hobbs & shaw</a></p>
+             <p>€19,99</p>
+@@ -118,7 +121,7 @@
+         </div>
+         <div class="movie-card">
+             <a href="movies/addamsfamilyhalloween.html">
+-                <img src="./assets/images/The%20Addams%20Family%20Halloween.jpeg" alt="The Addams Family Halloween movie cover, leading to the movie description page">
++                <img src="src/assets/images/The%20Addams%20Family%20Halloween.jpeg" alt="The Addams Family Halloween movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/addamsfamilyhalloween.html">the addams family halloween</a></p>
+             <p>€19,99</p>
+@@ -126,7 +129,7 @@
+         </div>
+         <div class="movie-card">
+             <a href="movies/toystory4.html">
+-                <img src="./assets/images/Toy%20Story%204.jpeg" alt="Toy Story 4 movie cover, leading to the movie description page">
++                <img src="src/assets/images/Toy%20Story%204.jpeg" alt="Toy Story 4 movie cover, leading to the movie description page">
+             </a>
+             <p><a href="movies/toystory4.html">toy story 4</a></p>
+             <p>€19,99</p>
+Index: contact.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"description\" content=\"Get in touch with Square Eyes for support or feedback. Contact us via email or phone, or send us a message through our contact form.\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Square Eyes - Contact Us</title>\r\n    <link rel=\"stylesheet\" href=\"./css/styles.css\">\r\n</head>\r\n\r\n<body>\r\n<header class=\"flex align-center justify-space-around\">\r\n    <img src=\"assets/images/SquareEyes_Logo.png\" id=\"logo\" alt=\"Square Eyes logo\">\r\n    <nav class=\"hide-on-mobile\">\r\n        <ul class=\"flex\">\r\n            <li><a href=\"index.html\">Home</a></li>\r\n            <li><a href=\"movies.html\">Movies</a></li>\r\n            <li><a class=\"active-tab\" href=\"contact.html\">Contact</a></li>\r\n            <li><a href=\"about.html\">About</a></li>\r\n            <li>\r\n                <a href=\"checkout.html\" aria-label=\"Go to checkout\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" fill=\"none\">\r\n                    <path d=\"M25.6 25.6C23.824 25.6 22.4 27.024 22.4 28.8C22.4 29.6487 22.7371 30.4626 23.3373 31.0627C23.9374 31.6629 24.7513 32 25.6 32C26.4487 32 27.2626 31.6629 27.8627 31.0627C28.4629 30.4626 28.8 29.6487 28.8 28.8C28.8 27.9513 28.4629 27.1374 27.8627 26.5373C27.2626 25.9371 26.4487 25.6 25.6 25.6ZM0 0V3.2H3.2L8.96 15.344L6.784 19.264C6.544 19.712 6.4 20.24 6.4 20.8C6.4 21.6487 6.73714 22.4626 7.33726 23.0627C7.93737 23.6629 8.75131 24 9.6 24H28.8V20.8H10.272C10.1659 20.8 10.0642 20.7579 9.98916 20.6828C9.91414 20.6078 9.872 20.5061 9.872 20.4C9.872 20.32 9.888 20.256 9.92 20.208L11.36 17.6H23.28C24.48 17.6 25.536 16.928 26.08 15.952L31.808 5.6C31.92 5.344 32 5.072 32 4.8C32 4.37565 31.8314 3.96869 31.5314 3.66863C31.2313 3.36857 30.8243 3.2 30.4 3.2H6.736L5.232 0M9.6 25.6C7.824 25.6 6.4 27.024 6.4 28.8C6.4 29.6487 6.73714 30.4626 7.33726 31.0627C7.93737 31.6629 8.75131 32 9.6 32C10.4487 32 11.2626 31.6629 11.8627 31.0627C12.4629 30.4626 12.8 29.6487 12.8 28.8C12.8 27.9513 12.4629 27.1374 11.8627 26.5373C11.2626 25.9371 10.4487 25.6 9.6 25.6Z\" fill=\"#1B1B1A\"/>\r\n                </svg></a>\r\n            </li>\r\n        </ul>\r\n    </nav>\r\n    <label class=\"hamburger-menu\" aria-label=\"Toggle mobile navigation menu\">\r\n        <input type=\"checkbox\">\r\n    </label>\r\n    <aside class=\"sidebar\">\r\n        <nav>\r\n            <ul>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 34\" fill=\"none\">\r\n                        <path d=\"M16 34V22H24V34H34V18H40L20 0L0 18H6V34H16Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a class=\"active-tab\" href=\"index.html\">Home</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"28\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M0 32V0H4L8 8H14L10 0H14L18 8H24L20 0H24L28 8H34L30 0H40V32H0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"movies.html\">Movies</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"24\" viewBox=\"0 0 40 32\" fill=\"none\">\r\n                        <path d=\"M4 32C2.9 32 1.95867 31.6087 1.176 30.826C0.393333 30.0433 0.00133333 29.1013 0 28V4C0 2.9 0.392 1.95867 1.176 1.176C1.96 0.393333 2.90133 0.00133333 4 0H36C37.1 0 38.042 0.392 38.826 1.176C39.61 1.96 40.0013 2.90133 40 4V28C40 29.1 39.6087 30.042 38.826 30.826C38.0433 31.61 37.1013 32.0013 36 32H4ZM20 18L36 8V4L20 14L4 4V8L20 18Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"contact.html\">Contact</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M22 14H18V10H22M22 30H18V18H22M20 0C17.3736 0 14.7728 0.517315 12.3463 1.52241C9.91982 2.5275 7.71504 4.00069 5.85786 5.85786C2.10714 9.60859 0 14.6957 0 20C0 25.3043 2.10714 30.3914 5.85786 34.1421C7.71504 35.9993 9.91982 37.4725 12.3463 38.4776C14.7728 39.4827 17.3736 40 20 40C25.3043 40 30.3914 37.8929 34.1421 34.1421C37.8929 30.3914 40 25.3043 40 20C40 17.3736 39.4827 14.7728 38.4776 12.3463C37.4725 9.91982 35.9993 7.71504 34.1421 5.85786C32.285 4.00069 30.0802 2.5275 27.6537 1.52241C25.2272 0.517315 22.6264 0 20 0Z\" fill=\"black\"/>\r\n                    </svg>\r\n                    <a href=\"about.html\">About</a>\r\n                </li>\r\n                <li>\r\n                    <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"32\" height=\"32\" viewBox=\"0 0 40 40\" fill=\"none\">\r\n                        <path d=\"M32 32C29.78 32 28 33.78 28 36C28 37.0609 28.4214 38.0783 29.1716 38.8284C29.9217 39.5786 30.9391 40 32 40C33.0609 40 34.0783 39.5786 34.8284 38.8284C35.5786 38.0783 36 37.0609 36 36C36 34.9391 35.5786 33.9217 34.8284 33.1716C34.0783 32.4214 33.0609 32 32 32ZM0 0V4H4L11.2 19.18L8.48 24.08C8.18 24.64 8 25.3 8 26C8 27.0609 8.42143 28.0783 9.17157 28.8284C9.92172 29.5786 10.9391 30 12 30H36V26H12.84C12.7074 26 12.5802 25.9473 12.4864 25.8536C12.3927 25.7598 12.34 25.6326 12.34 25.5C12.34 25.4 12.36 25.32 12.4 25.26L14.2 22H29.1C30.6 22 31.92 21.16 32.6 19.94L39.76 7C39.9 6.68 40 6.34 40 6C40 5.46957 39.7893 4.96086 39.4142 4.58579C39.0391 4.21071 38.5304 4 38 4H8.42L6.54 0M12 32C9.78 32 8 33.78 8 36C8 37.0609 8.42143 38.0783 9.17157 38.8284C9.92172 39.5786 10.9391 40 12 40C13.0609 40 14.0783 39.5786 14.8284 38.8284C15.5786 38.0783 16 37.0609 16 36C16 34.9391 15.5786 33.9217 14.8284 33.1716C14.0783 32.4214 13.0609 32 12 32Z\" fill=\"#1B1B1A\"/>\r\n                    </svg>\r\n                    <a href=\"checkout.html\">Cart</a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n    </aside>\r\n</header>\r\n<main class=\"centered-grid-layout\">\r\n    <h1>Get in touch with us</h1>\r\n    <section class=\"left-and-right-cols-flex\">\r\n        <div class=\"flex flex-column\">\r\n            <h2>send us a message</h2>\r\n            <form>\r\n                <div class=\"flex flex-row\">\r\n                    <div class=\"flex flex-column\">\r\n                        <label for=\"name\">Name</label>\r\n                        <input class=\"input-style\" id=\"name\" type=\"text\" placeholder=\"Full name\">\r\n                    </div>\r\n                    <div class=\"flex flex-column flex-grow\">\r\n                        <label for=\"email\">Email</label>\r\n                        <input class=\"input-style\" id=\"email\" type=\"text\" placeholder=\"Email address\">\r\n                    </div>\r\n                </div>\r\n                <div class=\"flex flex-column\">\r\n                    <label for=\"message\">Message</label>\r\n                    <textarea class=\"input-style\" id=\"message\" placeholder=\"Your message\"></textarea>\r\n                </div>\r\n                <div class=\"flex flex-column\">\r\n                    <button type=\"button\" class=\"button\">Submit</button>\r\n                </div>\r\n            </form>\r\n        </div>\r\n        <div class=\"flex flex-column flex-grow\">\r\n            <h2>contact information</h2>\r\n            <p>e: <span class=\"text-bold\">support@SquareEyes.com</span><br>t: <b>+44 0000 0000000</b></p>\r\n            <p><span class=\"text-bold\">Available</span><br>Monday - Friday 8am - 4pm</p>\r\n            <p>\r\n                <span class=\"text-bold\">Do you have a user account?</span><br>\r\n                <a href=\"#\" class=\"text-underline\">Sign in</a> and have a chat with us for faster support!\r\n            </p>\r\n        </div>\r\n    </section>\r\n</main>\r\n<footer>\r\n    <div id=\"newsletter\" class=\"centered-grid-layout\">\r\n        <div class=\"flex flex-column m-t-b-1\">\r\n            <span id=\"newsletter-header\" class=\"text-bold text-uppercase\">be the first to experience our latest movies</span>\r\n            <p>Don't miss out on our newest movies! Stay tuned by subscribing to our newsletter.</p>\r\n            <div id=\"newsletter-input-container\">\r\n                <input class=\"input-style\" type=\"text\" placeholder=\"name@example.com\" aria-label=\"Email address\">\r\n                <button class=\"button\" type=\"button\"> subscribe</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n    <div class=\"flex\">\r\n        <span id=\"copyright\">Copyright © 2025 Square Eyes</span>\r\n    </div>\r\n</footer>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/contact.html b/contact.html
+--- a/contact.html	(revision 1896b75a761d3c2080cf097ac82fe4f4766004cf)
++++ b/contact.html	(date 1758921097343)
+@@ -6,12 +6,12 @@
+     <meta name="description" content="Get in touch with Square Eyes for support or feedback. Contact us via email or phone, or send us a message through our contact form.">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Square Eyes - Contact Us</title>
+-    <link rel="stylesheet" href="./css/styles.css">
++    <link rel="stylesheet" href="src/css/styles.css">
+ </head>
+ 
+ <body>
+ <header class="flex align-center justify-space-around">
+-    <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
++    <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+     <nav class="hide-on-mobile">
+         <ul class="flex">
+             <li><a href="index.html">Home</a></li>
+@@ -92,7 +92,7 @@
+         </div>
+         <div class="flex flex-column flex-grow">
+             <h2>contact information</h2>
+-            <p>e: <span class="text-bold">support@SquareEyes.com</span><br>t: <b>+44 0000 0000000</b></p>
++            <p>Email: <span class="text-bold">support@squareeyes.com</span><br>Phone: <b>+44 0000 0000000</b></p>
+             <p><span class="text-bold">Available</span><br>Monday - Friday 8am - 4pm</p>
+             <p>
+                 <span class="text-bold">Do you have a user account?</span><br>
+diff --git a/css/reset.css b/src/css/reset.css
+rename from css/reset.css
+rename to src/css/reset.css
+diff --git a/css/typography.css b/src/css/typography.css
+rename from css/typography.css
+rename to src/css/typography.css
+diff --git a/css/variables.css b/src/css/variables.css
+rename from css/variables.css
+rename to src/css/variables.css
+diff --git a/css/utilities.css b/src/css/utilities.css
+rename from css/utilities.css
+rename to src/css/utilities.css
+diff --git a/css/hamburger-menu.css b/src/css/hamburger-menu.css
+rename from css/hamburger-menu.css
+rename to src/css/hamburger-menu.css

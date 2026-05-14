@@ -1,0 +1,387 @@
+/* Use import to split up your CSS into manageable chunks */
+@import url("reset.css");
+/* Files that are only needed to be imported are called partials */
+/* These are marked with an underscore: */
+@import url("variables.css");
+/* Feel free to add as many of these imports as you need */
+@import url("utilities.css");
+@import url("typography.css");
+@import url("hamburger-menu.css");
+
+body {
+    background-color: var(--color-background-primary);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5rem 1.50rem;
+    border-bottom: 2px solid var(--color-primary);
+    height: 6.25rem;
+    position: sticky;
+    top: 0;
+    background-color: var(--color-background-primary);
+    z-index: 1;
+}
+
+.centered-grid-layout {
+    margin-top: 1.25rem;
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    gap: 1.875rem;
+}
+
+#logo {
+    width: clamp(156px, 50vw, 240px);
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    gap: 1.875rem;
+}
+
+nav ul li a:hover {
+    border-top: 2px solid var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+textarea {
+    resize: none;
+    height: 12.5rem;
+    padding: 0.625rem 0 0 0.625rem;
+}
+
+form.flex .flex-row {
+    gap: var(--gap-md);
+}
+
+.hero {
+    background: url("../assets/images/Hero.jpg") no-repeat center/cover;
+    width: clamp(345px, 95vw, 1065px);
+    height: clamp(339px, 95vh, 628px);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.66);
+}
+
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    background-color: var(--color-background-secondary);
+}
+
+.movie-card > a > img {
+    width: 254px;
+    height: 378px;
+}
+
+.movie-card > p > a {
+    text-decoration: none;
+}
+
+#movies-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "movie1 movie2 movie3 movie4";
+    gap: 1rem;
+}
+
+#movies-filter-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 0.375rem;
+    margin-bottom: 1.875rem;
+    position: relative;
+}
+
+#filter-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background: var(--color-background-primary);
+    border: 1px solid #ccc;
+}
+
+#filter-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#filter-toggle {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+#filter-dropdown button {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#filter-dropdown button:hover {
+    background: #eee;
+}
+
+.movie-description-content {
+    display: flex;
+    place-items: center;
+    gap: 4.375rem;
+}
+
+.movie-description-content > img {
+    width: 380px;
+    height: 560px;
+}
+
+.movie-description-container {
+    display: flex;
+    width: 21.25rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+button,
+button:link,
+button:visited {
+    font-family: var(--display-font), sans-serif;
+    font-size: var(--font-size-md);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--color-standard-button-background);
+    border-radius: 0.25rem;
+    border: 0.25rem solid transparent;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-background-primary);
+    border: 0.25rem solid var(--color-standard-button-background);
+}
+
+.button-lg,
+.button-lg:link,
+.button-lg:visited {
+    font-size: var(--font-size-lg);
+    padding: 0.2rem 0.8rem 0 0.8rem;
+}
+
+.remove-from-cart-button {
+    color: #fff;
+    background-color: var(--color-remove-from-cart-button-background);
+}
+
+.remove-from-cart-button:hover {
+    color: var(--color-primary);
+    background-color: var(--color-background-primary);
+    border: 0.25rem solid var(--color-remove-from-cart-button-background);
+}
+
+#order-summary {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border: 1px solid var(--color-primary);
+    width: 22rem;
+}
+
+#order-summary > h2 {
+    border-bottom: 1px solid var(--color-primary);
+    width: 100%;
+    text-align: center;
+}
+
+#order-summary > div > p {
+    margin: 0;
+}
+
+#order-summary > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.625rem;
+    width: 100%;
+    gap: var(--gap-sm);
+    font-weight: 700;
+}
+
+#order-summary > div:only-of-type {
+    justify-content: space-evenly;
+}
+
+#order-summary > div:last-child:not(:only-of-type) {
+    border-top: 1px solid var(--color-primary);
+    background-color: var(--color-background-secondary);
+}
+
+#newsletter {
+    background-color: var(--color-background-secondary);
+    border-bottom: 0.25rem #373736;
+}
+
+#newsletter-input-container {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--gap-md);
+}
+
+#newsletter-input-container input[type="text"] {
+    flex-grow: 1;
+}
+
+#newsletter-input-container button {
+    flex-grow: 0.5;
+}
+
+#copyright {
+    font-family: var(--display-font), sans-serif;
+    font-size: var(--font-size-md);
+    border-top: 2px solid var(--color-primary);
+    width: 100%;
+    text-align: center;
+}
+
+.input-style {
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    padding: 0 0.625rem;
+}
+
+.left-and-right-cols-flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.left-and-right-cols-flex > div {
+    gap: var(--gap-md);
+}
+
+.hidden {
+    display: none;
+}
+
+#loading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+    #movies-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            "movie1 movie2 movie3"
+            ". movie4 .";
+    }
+}
+
+@media (max-width: 900px) {
+    #order-summary {
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-content: space-between;
+        border-bottom: none;
+    }
+
+    .centered-grid-layout {
+        gap: var(--gap-md);
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .latest-movies {
+        flex-direction: column;
+    }
+
+    #movies-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "movie1 movie2"
+            "movie3 movie4";
+    }
+
+    .secondary-hero > a {
+        top: 70%;
+    }
+
+    .left-and-right-cols-flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: var(--gap-md);
+    }
+
+    .movie-description-content {
+        flex-direction: column;
+        gap: var(--gap-md);
+    }
+
+    #newsletter {
+        padding: 0 1rem;
+        margin-bottom: 0;
+    }
+
+    #newsletter-input-container {
+        gap: var(--gap-sm);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 4rem 1.50rem;
+    }
+
+    #movies-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "movie1"
+            "movie2"
+            "movie3"
+            "movie4";
+    }
+
+    #newsletter-input-container {
+        flex-direction: column;
+        gap: var(--gap-sm);
+    }
+
+    #newsletter-input-container input[type="text"] {
+        width: 100%;
+    }
+
+    #newsletter-input-container button {
+        width: 100%;
+    }
+}

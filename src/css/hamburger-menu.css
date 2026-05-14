@@ -1,0 +1,95 @@
+#hamburger-menu {
+    --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+    display: none;
+    flex-direction: column;
+    gap: var(--hamburger-gap);
+    width: auto;
+    position: absolute;
+    top: var(--hamburger-margin);
+    right: var(--hamburger-margin);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#hamburger-menu::before,
+#hamburger-menu::after,
+#hamburger-menu input {
+    content: "";
+    width: var(--navbar-width);
+    height: var(--navbar-height);
+    background-color: black;
+    border-radius: 9999px;
+    transform-origin: left center;
+    transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing);
+}
+
+#hamburger-menu input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+#hamburger-menu:has(input:checked)::before { 
+    rotate: 45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--navbar-height) / -2);
+}
+
+#hamburger-menu:has(input:checked)::after {
+    rotate: -45deg;
+    width: var(--x-width);
+    translate: 0 calc(var(--navbar-height) / 2);
+}
+
+#hamburger-menu input:checked {
+    opacity: 0;
+    width: 0;
+}
+
+#sidebar {
+    display: none;
+    position: fixed;
+    top: calc(var(--hamburger-height) + var(--hamburger-margin) + 1rem);
+    right: var(--hamburger-margin);
+    z-index: 1;
+    padding: 0.75rem;
+    background-color: var(--color-background-primary);
+    border-radius: 0.5rem;
+}
+
+#sidebar a {
+    font-size: var(--font-size-lg);
+}
+
+#sidebar > nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar > nav > ul > li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#hamburger-menu:has(input:checked) + #sidebar {
+    display: flex;
+}
+
+/*Fix for when the menu is open but the browser is resized to a bigger width*/
+@media (min-width: 769px) {
+    #sidebar {
+        display: none !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #hamburger-menu {
+        display: flex;
+    }
+}
