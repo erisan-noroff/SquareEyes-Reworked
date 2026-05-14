@@ -85,21 +85,28 @@ typography, colour palette, spacing, and component specifications for the Square
 | **H2**        | Regular (400), 40px, 2px letter-spacing | Regular (400), 32px, 2px letter-spacing |
 | **H3**        | Regular (400), 28px, 2px letter-spacing | Regular (400), 24px, 2px letter-spacing |
 
+### Navigation
+
+**Font:** Bebas Neue (display)
+
+|                | Desktop                                            | Mobile               |
+|----------------|----------------------------------------------------|----------------------|
+| **Navigation** | Semibold (600), 18px, 1.5px (8.33%) letter-spacing | Semibold (600), 16px |
+
 ### Body
 
 **Font:** Assistant (sans-serif)
 
-|                      | Desktop                                                | Mobile                                                 |
-|----------------------|--------------------------------------------------------|--------------------------------------------------------|
-| **Navigation**       | Semibold (600), 18px, 8.33% letter-spacing             | Semibold (600), 16px                                   |
-| **Eyebrow (Hero)**   | Semibold (600), 16px, 18.75% letter-spacing, uppercase | Semibold (600), 14px, 18.75% letter-spacing, uppercase |
-| **Eyebrow**          | Semibold (600), 14px, 21.43% letter-spacing, uppercase | Semibold (600), 13px, 21.43% letter-spacing, uppercase |
-| **Body**             | Regular (400), 16px                                    | Regular (400), 14px                                    |
-| **Buttons**          | Semibold (600), 16px, 12.5% letter-spacing, uppercase  | Semibold (600), 14px, 12.5% letter-spacing, uppercase  |
-| **Badge**            | Regular (400), 13px                                    | Regular (400), 12px                                    |
-| **Discounted Price** | Regular (400), 16px, strikethrough, muted              | Regular (400), 14px, strikethrough, muted              |
-| **Price**            | Semibold (600), 16px                                   | Semibold (600), 14px                                   |
-| **Movie Title**      | Regular (400), 16px, uppercase                         | Regular (400), 14px, uppercase                         |
+|                      | Desktop                                                      | Mobile                                                       |
+|----------------------|--------------------------------------------------------------|--------------------------------------------------------------|
+| **Eyebrow (Hero)**   | Semibold (600), 16px, 3px (18.75%) letter-spacing, uppercase | Semibold (600), 14px, 3px (18.75%) letter-spacing, uppercase |
+| **Eyebrow**          | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase |
+| **Body**             | Regular (400), 16px                                          | Regular (400), 14px                                          |
+| **Buttons**          | Semibold (600), 16px, 2px (12.5%) letter-spacing, uppercase  | Semibold (600), 14px, 2px (12.5%) letter-spacing, uppercase  |
+| **Badge**            | Semibold (600), 14px                                         | Semibold (600), 14px                                         |
+| **Discounted Price** | Regular (400), 16px, strikethrough, muted                    | Regular (400), 14px, strikethrough, muted                    |
+| **Price**            | Semibold (600), 16px                                         | Semibold (600), 14px                                         |
+| **Movie Title**      | Regular (400), 16px, uppercase                               | Regular (400), 14px, uppercase                               |
 
 ***
 
