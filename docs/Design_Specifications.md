@@ -45,6 +45,11 @@ All developers must adhere to these design specifications when implementing the 
 - **Default:** #1B1B1A
 - **Active:** #1B1B1A with 2px orange (#FF9900) underline, 4px below text
 
+### Links
+- **Colour:** #1B1B1A
+- **Text decoration:** Underline, #FF9900
+- **Underline offset:** 0.25rem
+
 ### Dark Section
 - **Background:** #1B1B1A
 - **Text:** #FCFBF4 at 100%
@@ -67,17 +72,17 @@ All developers must adhere to these design specifications when implementing the 
 ### Body
 **Font:** Assistant (sans-serif)
 
-| | Desktop | Mobile |
-|---|---|---|
-| **Navigation** | Semibold (600), 18px, 8.33% letter-spacing | Semibold (600), 16px |
-| **Eyebrow (Hero)** | Semibold (600), 16px, 18.75% letter-spacing, uppercase | Semibold (600), 14px, 18.75% letter-spacing, uppercase |
-| **Eyebrow** | Semibold (600), 14px, 21.43% letter-spacing, uppercase | Semibold (600), 13px, 21.43% letter-spacing, uppercase |
-| **Body** | Regular (400), 16px | Regular (400), 14px |
-| **Buttons** | Semibold (600), 16px, 12.5% letter-spacing, uppercase | Semibold (600), 14px, 12.5% letter-spacing, uppercase |
-| **Badge** | Regular (400), 13px | Regular (400), 12px |
-| **Price** | Semibold (600), 16px | Semibold (600), 14px |
-| **Meta/Links** | Semibold (600), 14px | Semibold (600), 13px |
-| **Movie Title** | Regular (400), 16px, uppercase | Regular (400), 14px, uppercase |
+|                      | Desktop                                                | Mobile                                                 |
+|----------------------|--------------------------------------------------------|--------------------------------------------------------|
+| **Navigation**       | Semibold (600), 18px, 8.33% letter-spacing             | Semibold (600), 16px                                   |
+| **Eyebrow (Hero)**   | Semibold (600), 16px, 18.75% letter-spacing, uppercase | Semibold (600), 14px, 18.75% letter-spacing, uppercase |
+| **Eyebrow**          | Semibold (600), 14px, 21.43% letter-spacing, uppercase | Semibold (600), 13px, 21.43% letter-spacing, uppercase |
+| **Body**             | Regular (400), 16px                                    | Regular (400), 14px                                    |
+| **Buttons**          | Semibold (600), 16px, 12.5% letter-spacing, uppercase  | Semibold (600), 14px, 12.5% letter-spacing, uppercase  |
+| **Badge**            | Regular (400), 13px                                    | Regular (400), 12px                                    |
+| **Discounted Price** | Regular (400), 16px, strikethrough, muted              | Regular (400), 14px, strikethrough, muted              |
+| **Price**            | Semibold (600), 16px                                   | Semibold (600), 14px                                   |
+| **Movie Title**      | Regular (400), 16px, uppercase                         | Regular (400), 14px, uppercase                         |
 
 ***
 
