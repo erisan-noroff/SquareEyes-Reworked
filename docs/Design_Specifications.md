@@ -70,6 +70,12 @@ typography, colour palette, spacing, and component specifications for the Square
 - **Text:** #FCFBF4 at 100%
 - **Subtext:** #FCFBF4 at 70%
 
+## Input
+
+- **Background:** #FFFFFF
+- **Border:** #1B1B1A 1px
+- **Border radius:** 0.25rem
+
 ***
 
 ## Typography
