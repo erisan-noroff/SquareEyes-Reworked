@@ -29,10 +29,10 @@
 
 @font-face {
     font-family: "Bebas Neue";
-    src: url("../assets/fonts/BebasNeue-Regular.ttf");
+    src: url("../fonts/BebasNeue-Regular.ttf");
 }
 
 @font-face {
     font-family: "Assistant";
-    src: url("../assets/fonts/Assistant-VariableFont_wght.ttf");
+    src: url("../fonts/Assistant-VariableFont_wght.ttf");
 }

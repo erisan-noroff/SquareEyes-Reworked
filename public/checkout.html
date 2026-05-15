@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Thank you for your purchase! Your order has been successfully completed. Find out more about your order details and next steps.">
+    <meta name="description" content="Complete your purchase securely and quickly. Enter your payment details to finalize your order.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square Eyes - Purchase Completed</title>
-    <link rel="stylesheet" href="src/css/styles.css">
-    <script src="src/scripts/checkout-success.js"></script>
+    <title>Square Eyes - Contact Us</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/scripts/checkout.js" type="module" defer></script>
 </head>
 
 <body>
 <header class="flex align-center justify-space-around">
     <a href="index.html">
-        <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+        <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
     </a>
     <nav class="hide-on-mobile">
         <ul class="flex">
@@ -64,20 +64,37 @@
     </aside>
 </header>
 <main class="centered-grid-layout">
-    <section class="flex flex-column">
-        <h1>thank you for your purchase!</h1>
-        <h2 id="order-number">Order #</h2>
-        <p>
-            We will email you an order confirmation shortly.<br>
-            You will be able to access the purchased content in your library once you log in with the supplied email
-            address.
-        </p>
-        <p>
-            If you do not have an account registered with us, then a separate email with a registration link will be
-            sent to the supplied email address.<br>Please check your spam folder in case you have not received an
-            email from us.
-        </p>
-        <a class="m-t-1 text-bold" href="index.html">Click here to go back to the home page</a>
+    <section class="left-and-right-cols-flex">
+        <div class="flex flex-column">
+            <h1>Complete your purchase</h1>
+            <form id="checkout-form">
+                <div class="flex flex-column">
+                    <label for="email">Email</label>
+                    <input class="input-style" id="email" autocomplete="email" type="text" placeholder="name@example.com" required>
+                </div>
+                <div class="flex flex-column">
+                    <label for="card-number">Card Number</label>
+                    <input class="input-style" id="card-number" autocomplete="card-number" type="text" pattern="\d{12,19}" title="Invalid credit card number. Must be 12 to 19 digits." required>
+                </div>
+                <div class="flex flex-row">
+                    <div class="flex flex-column">
+                        <label for="expiry-date">Expiration Date</label>
+                        <input class="input-style" id="expiry-date" autocomplete="expiry-date" type="text" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])\/2[0-9]" title="Please enter a valid expiry date in MM/YY format" required>
+                    </div>
+                    <div class="flex flex-column flex-grow">
+                        <label for="security-code">CVC/CVV</label>
+                        <input class="input-style" id="security-code" autocomplete="security-code" type="text" pattern="\d{3}" title="CVC/CVV must be 3 digits" required>
+                    </div>
+                </div>
+                <div class="flex flex-column">
+                    <button type="submit">complete purchase</button>
+                </div>
+            </form>
+        </div>
+        <div id="order-summary">
+            <h2 class="m-0">order summary</h2>
+            <!-- Items will be dynamically added -->
+        </div>
     </section>
 </main>
 <footer>
