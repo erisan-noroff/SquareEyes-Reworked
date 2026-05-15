@@ -102,7 +102,7 @@ typography, colour palette, spacing, and component specifications for the Square
 ### Body
 
 **Font:** Assistant (sans-serif)
- 
+
 |                      | Desktop                                                      | Mobile                                                       |
 |----------------------|--------------------------------------------------------------|--------------------------------------------------------------|
 | **Eyebrow (Hero)**   | Semibold (600), 16px, 3px (18.75%) letter-spacing, uppercase | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase |
@@ -135,45 +135,6 @@ typography, colour palette, spacing, and component specifications for the Square
 
 ## Component Specifications
 
-### Movie Card
+### Figma
 
-- **Width:** 17.625rem
-- **Height:** 36.5rem
-- **Image:** 15.625rem × 22.875rem
-- **Internal padding:** 1rem all sides
-- **Border:** #1B1B1A at 15% opacity, 1px
-- **Border radius:** 0.25rem
-
-### Buttons
-
-- **Height:** 3rem
-- **Padding:** 1rem horizontal
-- **Border radius:** 0.25rem
-
-### Input Fields
-
-- **Height:** 3rem
-- **Padding:** 1rem horizontal
-- **Border:** #1B1B1A at 15% opacity, 1px
-- **Border radius:** 0.25rem
-- **Background:** #FCFBF4
-
-### Hero
-
-- **Height:** 34.375rem–37.5rem desktop, 18.75rem–21.875rem mobile
-- **Gradient:** linear-gradient(to right, rgba(0,0,0,0.6), transparent)
-- **Content max-width:** 31.25rem
-
-### Promo Banner
-
-- **Size:** 75rem × 21.875rem
-- **Split:** 50/50 (37.5rem text panel, 37.5rem image panel)
-- **Internal padding:** 3rem all sides
-- **Gap between elements:** 2rem
-
-### Newsletter
-
-- **Background:** #1B1B1A
-- **Gap between text and form:** 2rem
-- **Input width:** 15.625rem
-- **Input height:** 3rem
+https://www.figma.com/design/PV8lhOge1aNHaK2OvS2iCh/Square-Eyes--Reworked-?node-id=0-1&t=m6tsUnvaYSciJcHd-1
