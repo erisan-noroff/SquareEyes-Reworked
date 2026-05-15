@@ -146,6 +146,7 @@ typography, colour palette, spacing, and component specifications for the Square
 ### Input Fields
 
 - **Height:** 3rem
+- **Padding:** 1rem horizontal
 - **Border:** #1B1B1A at 15% opacity, 1px
 - **Border radius:** 0.25rem
 - **Background:** #FCFBF4
