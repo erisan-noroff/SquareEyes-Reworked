@@ -102,13 +102,13 @@ typography, colour palette, spacing, and component specifications for the Square
 ### Body
 
 **Font:** Assistant (sans-serif)
-
+ 
 |                      | Desktop                                                      | Mobile                                                       |
 |----------------------|--------------------------------------------------------------|--------------------------------------------------------------|
-| **Eyebrow (Hero)**   | Semibold (600), 16px, 3px (18.75%) letter-spacing, uppercase | Semibold (600), 14px, 3px (18.75%) letter-spacing, uppercase |
+| **Eyebrow (Hero)**   | Semibold (600), 16px, 3px (18.75%) letter-spacing, uppercase | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase |
 | **Eyebrow**          | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase |
 | **Body**             | Regular (400), 16px                                          | Regular (400), 14px                                          |
-| **Buttons**          | Semibold (600), 16px, 2px (12.5%) letter-spacing, uppercase  | Semibold (600), 14px, 2px (12.5%) letter-spacing, uppercase  |
+| **Buttons**          | Semibold (600), 16px, 2px (12.5%) letter-spacing, uppercase  | Semibold (600), 14px, 2px (14.29%) letter-spacing, uppercase |
 | **Badge**            | Semibold (600), 14px                                         | Semibold (600), 14px                                         |
 | **Discounted Price** | Regular (400), 16px, strikethrough, muted                    | Regular (400), 14px, strikethrough, muted                    |
 | **Price**            | Semibold (600), 16px                                         | Semibold (600), 14px                                         |
