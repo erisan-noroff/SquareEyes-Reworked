@@ -39,7 +39,7 @@ typography, colour palette, spacing, and component specifications for the Square
 
 - **Success:** #31D962
 - **Usage:** "Added to Cart" button state
-- **Error:** (define if needed for form validation)
+- **Error:** #DC2626
 
 ### Buttons
 
@@ -115,15 +115,15 @@ typography, colour palette, spacing, and component specifications for the Square
 
 **Root font size:** 16px. All spacing values should be implemented in rem in CSS.
 
-| Scale | Value | rem     | Usage                                                                |
-|-------|-------|---------|----------------------------------------------------------------------|
-| 1     | 4px   | 0.25rem | Rating gap, border radius on buttons and badges                      |
-| 2     | 8px   | 0.5rem  | Gap between card elements (badge→title, title→rating, rating→button) |
-| 3     | 16px  | 1rem    | Card internal padding, gap between input, subscribe button and label |
-| 4     | 24px  | 1.5rem  | Gap between cards                                                    |
-| 5     | 32px  | 2rem    | Newsletter gap between text and form, mobile section padding         |
-| 6     | 48px  | 3rem    | Section padding top and bottom                                       |
-| 7     | 64px  | 4rem    | Hero padding, page horizontal margins                                |
+| Scale | Value | rem     | Usage                                                                             |
+|-------|-------|---------|-----------------------------------------------------------------------------------|
+| 1     | 4px   | 0.25rem | Rating gap, border radius on buttons and badges                                   |
+| 2     | 8px   | 0.5rem  | Gap between card elements (badge→title, title→rating, rating→button)              |
+| 3     | 16px  | 1rem    | Card internal padding, gap between input, label, form errors and subscribe button |
+| 4     | 24px  | 1.5rem  | Gap between cards                                                                 |
+| 5     | 32px  | 2rem    | Newsletter gap between text and form, mobile section padding                      |
+| 6     | 48px  | 3rem    | Section padding top and bottom                                                    |
+| 7     | 64px  | 4rem    | Hero padding, page horizontal margins                                             |
 
 ***
 
