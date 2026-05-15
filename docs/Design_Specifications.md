@@ -84,20 +84,20 @@ typography, colour palette, spacing, and component specifications for the Square
 
 **Font:** Bebas Neue (display)
 
-|               | Desktop                                 | Mobile                                  |
-|---------------|-----------------------------------------|-----------------------------------------|
-| **H1 (Hero)** | Regular (400), 72px, 2px letter-spacing | Regular (400), 48px, 2px letter-spacing |
-| **H1**        | Regular (400), 56px, 2px letter-spacing | Regular (400), 40px, 2px letter-spacing |
-| **H2**        | Regular (400), 40px, 2px letter-spacing | Regular (400), 32px, 2px letter-spacing |
-| **H3**        | Regular (400), 28px, 2px letter-spacing | Regular (400), 24px, 2px letter-spacing |
+|               | Desktop                                         | Mobile                                          |
+|---------------|-------------------------------------------------|-------------------------------------------------|
+| **H1 (Hero)** | Regular (400), 72px, 2px (2.78%) letter-spacing | Regular (400), 48px, 2px (4.17%) letter-spacing |
+| **H1**        | Regular (400), 56px, 2px (3.57%) letter-spacing | Regular (400), 40px, 2px (5%) letter-spacing    |
+| **H2**        | Regular (400), 40px, 2px (5%) letter-spacing    | Regular (400), 32px, 2px (6.25%) letter-spacing |
+| **H3**        | Regular (400), 28px, 2px (7.14%) letter-spacing | Regular (400), 24px, 2px (8.33%) letter-spacing |
 
 ### Navigation
 
 **Font:** Bebas Neue (display)
 
-|                | Desktop                                            | Mobile               |
-|----------------|----------------------------------------------------|----------------------|
-| **Navigation** | Semibold (600), 18px, 1.5px (8.33%) letter-spacing | Semibold (600), 16px |
+|                | Desktop                                            | Mobile                                              |
+|----------------|----------------------------------------------------|-----------------------------------------------------|
+| **Navigation** | Semibold (600), 18px, 1.5px (8.33%) letter-spacing | Semibold (600), 16px, 1.5px (9.375%) letter-spacing |
 
 ### Body
 
