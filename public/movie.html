@@ -3,22 +3,25 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Learn more about Square Eyes, our mission, and our commitment to providing unique, high-quality movies.">
+    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Square Eyes - About Us</title>
-    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- Title will be dynamically updated by JavaScript. -->
+    <title>Square Eyes - Movie description</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/scripts/movie-details.js" type="module" defer></script>
+    <script src="assets/scripts/apiClient.js" type="module" defer></script>
 </head>
 
 <body>
-<header class="flex align-center justify-space-around">
+<header>
     <a href="index.html">
-        <img src="src/assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
+        <img src="assets/images/SquareEyes_Logo.png" id="logo" alt="Square Eyes logo">
     </a>
     <nav class="hide-on-mobile">
         <ul class="flex">
-            <li><a href="index.html">Movies</a></li>
+            <li><a class="active-tab" href="index.html">Movies</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a class="active-tab" href="about.html">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li>
                 <a href="checkout.html" aria-label="Go to checkout">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
@@ -63,20 +66,15 @@
     </aside>
 </header>
 <main class="centered-grid-layout">
-    <section class="flex flex-column">
-        <h1>about us</h1>
-        <h2>discover unique films</h2>
-        <p>Welcome to Square Eyes, your premier destination for high-quality videos directly from the
-            creators themselves. Our platform is designed for those who want instant access to a diverse range of
-            films, allowing you to purchase and watch your favourite content online right away.</p>
-        <h2>support small filmmakers</h2>
-        <p>At Square Eyes, we believe in supporting small filmmakers and showcasing their unique voices. Our
-            curated collections and easy-to-navigate categories make it simple to discover hidden gems and explore a
-            wide variety of genres. Whether you’re looking for the latest indie hits or timeless classics, you’ll
-            find it all here.</p>
-        <h2>seamless viewing experience</h2>
-        <p>Join us in celebrating the art of filmmaking and enjoy a seamless viewing experience with just a
-            few clicks. Dive into our extensive library and start your cinematic journey today!</p>
+    <p id="loading">Loading movie details...</p>
+    <section id="hidden-until-loaded" class="movie-description-content hidden">
+        <img id="movie-image" src="" alt="">
+        <div class="movie-description-container">
+            <h1 id="movie-title"></h1>
+            <p id="movie-description"></p>
+            <p id="movie-price" class="text-bold"></p>
+            <a href="checkout.html" class="button">add to cart</a>
+        </div>
     </section>
 </main>
 <footer>

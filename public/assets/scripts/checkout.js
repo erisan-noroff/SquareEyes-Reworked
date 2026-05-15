@@ -11,7 +11,7 @@ class Checkout {
         document.getElementById('checkout-form').addEventListener('submit', (e) => {
             e.preventDefault();
             localStorage.removeItem('cartItems');
-            location.assign('./checkout-success.html');
+            location.assign('../../checkout-success.html');
         });
         
         if(!cartItems || Object.keys(cartItems).length === 0) {
