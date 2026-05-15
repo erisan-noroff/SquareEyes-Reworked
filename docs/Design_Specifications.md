@@ -107,6 +107,7 @@ typography, colour palette, spacing, and component specifications for the Square
 | **Discounted Price** | Regular (400), 16px, strikethrough, muted                    | Regular (400), 14px, strikethrough, muted                    |
 | **Price**            | Semibold (600), 16px                                         | Semibold (600), 14px                                         |
 | **Movie Title**      | Regular (400), 16px, uppercase                               | Regular (400), 14px, uppercase                               |
+| **Form Label**       | Regular (400), 16px                                          | Regular (400), 14px                                          |
 
 ***
 
@@ -118,7 +119,7 @@ typography, colour palette, spacing, and component specifications for the Square
 |-------|-------|---------|----------------------------------------------------------------------|
 | 1     | 4px   | 0.25rem | Rating gap, border radius on buttons and badges                      |
 | 2     | 8px   | 0.5rem  | Gap between card elements (badge→title, title→rating, rating→button) |
-| 3     | 16px  | 1rem    | Card internal padding, gap between input and subscribe button        |
+| 3     | 16px  | 1rem    | Card internal padding, gap between input, subscribe button and label |
 | 4     | 24px  | 1.5rem  | Gap between cards                                                    |
 | 5     | 32px  | 2rem    | Newsletter gap between text and form, mobile section padding         |
 | 6     | 48px  | 3rem    | Section padding top and bottom                                       |
