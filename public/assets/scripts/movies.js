@@ -4,19 +4,15 @@ import { MovieCardRenderer } from './movie-card-renderer.js';
 class MoviesList {
     async init() {
         try {
-            // No parameter required to fetch all movies.
             const response = await new ApiClient().get('');
             // Sorted by rating in descending order (highest to lowest).
             this.sortedMovies = response.data.sort((a, b) => b.rating - a.rating);
             this.moviesContainer = document.getElementById('movies-container');
             this.movieCardRenderer = new MovieCardRenderer(this.moviesContainer, this.sortedMovies);
             this.addToggleFilterMenuListener();
-        } catch(e) {
-            // Fallback in case the loading indicator element is not found in the DOM.
+        } catch {
             const loadingIndicator = document.getElementById('loading');
-            loadingIndicator
-                ? loadingIndicator.innerText = 'Failed to load movies. Please try again later.'
-                : alert('Failed to load movies. Please try again later.');
+            loadingIndicator.innerText = 'Failed to load movies. Please try to refresh the page.';
         }
     }
 
