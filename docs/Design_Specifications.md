@@ -62,7 +62,6 @@ typography, colour palette, spacing, and component specifications for the Square
 
 - **Colour:** #1B1B1A
 - **Text decoration:** Underline, #FF9900
-- **Underline offset:** 0.25rem
 
 ### Dark Section
 
@@ -84,36 +83,37 @@ typography, colour palette, spacing, and component specifications for the Square
 
 **Font:** Bebas Neue (display)
 
-|               | Desktop                                         | Mobile                                          |
-|---------------|-------------------------------------------------|-------------------------------------------------|
-| **H1 (Hero)** | Regular (400), 72px, 2px (2.78%) letter-spacing | Regular (400), 48px, 2px (4.17%) letter-spacing |
-| **H1**        | Regular (400), 56px, 2px (3.57%) letter-spacing | Regular (400), 40px, 2px (5%) letter-spacing    |
-| **H2**        | Regular (400), 40px, 2px (5%) letter-spacing    | Regular (400), 32px, 2px (6.25%) letter-spacing |
-| **H3**        | Regular (400), 28px, 2px (7.14%) letter-spacing | Regular (400), 24px, 2px (8.33%) letter-spacing |
+|               | Desktop                                                   | Mobile                                                   |
+|---------------|-----------------------------------------------------------|----------------------------------------------------------|
+| **H1 (Hero)** | Regular (400), 72px (4.5rem), 2px (2.78%) letter-spacing  | Regular (400), 48px (3rem), 2px (4.17%) letter-spacing   |
+| **H1**        | Regular (400), 56px (3.5rem), 2px (3.57%) letter-spacing  | Regular (400), 40px (2.5rem), 2px (5%) letter-spacing    |
+| **H2**        | Regular (400), 40px (2.5rem), 2px (5%) letter-spacing     | Regular (400), 32px (2rem), 2px (6.25%) letter-spacing   |
+| **H3**        | Regular (400), 28px (1.75rem), 2px (7.14%) letter-spacing | Regular (400), 24px (1.5rem), 2px (8.33%) letter-spacing |
 
 ### Navigation
 
 **Font:** Bebas Neue (display)
 
-|                | Desktop                                            | Mobile                                              |
-|----------------|----------------------------------------------------|-----------------------------------------------------|
-| **Navigation** | Semibold (600), 18px, 1.5px (8.33%) letter-spacing | Semibold (600), 16px, 1.5px (9.375%) letter-spacing |
+|                | Desktop                                                       | Mobile                                                     |
+|----------------|---------------------------------------------------------------|------------------------------------------------------------|
+| **Navigation** | Semibold (600), 18px (1.125rem), 1.5px (8.33%) letter-spacing | Semibold (600), 16px (1rem), 1.5px (9.375%) letter-spacing |
 
 ### Body
 
 **Font:** Assistant (sans-serif)
 
-|                      | Desktop                                                      | Mobile                                                       |
-|----------------------|--------------------------------------------------------------|--------------------------------------------------------------|
-| **Eyebrow (Hero)**   | Semibold (600), 16px, 3px (18.75%) letter-spacing, uppercase | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase |
-| **Eyebrow**          | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase | Semibold (600), 14px, 3px (21.43%) letter-spacing, uppercase |
-| **Body**             | Regular (400), 16px                                          | Regular (400), 14px                                          |
-| **Buttons**          | Semibold (600), 16px, 2px (12.5%) letter-spacing, uppercase  | Semibold (600), 14px, 2px (14.29%) letter-spacing, uppercase |
-| **Badge**            | Semibold (600), 14px                                         | Semibold (600), 14px                                         |
-| **Discounted Price** | Regular (400), 16px, strikethrough, muted                    | Regular (400), 14px, strikethrough, muted                    |
-| **Price**            | Semibold (600), 16px                                         | Semibold (600), 14px                                         |
-| **Movie Title**      | Regular (400), 16px, uppercase                               | Regular (400), 14px, uppercase                               |
-| **Form Label**       | Regular (400), 16px                                          | Regular (400), 14px                                          |
+|                      | Desktop                                                                 | Mobile                                                                  |
+|----------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| **Eyebrow (Hero)**   | Semibold (600), 16px (1rem), 3px (18.75%) letter-spacing, uppercase     | Semibold (600), 14px (0.875rem), 3px (21.43%) letter-spacing, uppercase |
+| **Eyebrow**          | Semibold (600), 14px (0.875rem), 3px (21.43%) letter-spacing, uppercase | Semibold (600), 14px (0.875rem), 3px (21.43%) letter-spacing, uppercase |
+| **Body**             | Regular (400), 16px (1rem)                                              | Regular (400), 14px (0.875rem)                                          |
+| **Buttons**          | Semibold (600), 16px (1rem), 2px (12.5%) letter-spacing, uppercase      | Semibold (600), 14px (0.875rem), 2px (14.29%) letter-spacing, uppercase |
+| **Badge**            | Semibold (600), 14px (0.875rem)                                         | Semibold (600), 14px (0.875rem)                                         |
+| **Discounted Price** | Regular (400), 16px (1rem), strikethrough, muted                        | Regular (400), 14px (0.875rem), strikethrough, muted                    |
+| **Price**            | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                         |
+| **Movie Title**      | Regular (400), 16px, uppercase                                          | Regular (400), 14px (0.875rem), uppercase                               |
+| **Form Label**       | Regular (400), 16px (1rem)                                              | Regular (400), 14px (0.875rem)                                          |
+| **Link**             | Semibold (600), 16px (1rem)                                             | Semibold (600)w, 14px (0.875rem)                                        |
 
 ***
 
