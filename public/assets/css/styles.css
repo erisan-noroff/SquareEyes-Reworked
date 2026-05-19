@@ -111,7 +111,7 @@ button {
     text-decoration-color: var(--color-border);
 }
 
-.nav-link-active, .link {
+.desktop-nav-link-active, .link {
     text-decoration: underline;
     text-decoration-color: var(--color-primary);
 }
@@ -127,6 +127,14 @@ button {
 }
 
 .mobile-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+    border-bottom: 0.5px solid var(--color-border);
+}
+
+.mobile-nav > .nav-link {
+    border: 1px solid red;
 }
 
 .page-wrapper {

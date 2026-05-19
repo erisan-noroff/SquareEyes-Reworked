@@ -22,7 +22,7 @@ export class MovieCardRenderer {
                         ${this.renderPrice(movie)}
                     </div>
                 </div>
-                <button type="button" data-i="${index}" class="button ${cartInstance.cartItems[movie.title.toLowerCase()] ? 'remove-from-cart-button' : ''}">
+                <button type="button" data-i="${index}" class="primary-button ${cartInstance.cartItems[movie.title.toLowerCase()] ? 'remove-from-cart-button' : ''}">
                 ${!cartInstance.cartItems[movie.title.toLowerCase()] ? 'add to cart' : 'remove from cart'}
                 </button>
             </div>
