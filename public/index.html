@@ -17,8 +17,8 @@
         <a href="index.html" class="logo" aria-label="Square Eyes home page">
             <img src="assets/images/SquareEyes_Logo.png" alt="">
         </a>
-        <nav aria-label="Site navigation menu">
-            <ul class="nav-links">
+        <nav class="desktop-nav" aria-label="Site navigation menu">
+            <ul class="desktop-nav-links">
                 <li><a class="nav-link nav-link-active" href="index.html">Home</a></li>
                 <li><a class="nav-link" href="movies.html">Movies</a></li>
                 <li><a class="nav-link" href="contact.html">Contact</a></li>
@@ -32,6 +32,12 @@
                 </li>
             </ul>
         </nav>
+        <button id="toggle-mobile-nav" class="mobile-nav-toggle" aria-label="Menu" type="button">
+            <span class="material-icons">menu</span>
+        </button>
+        <nav class="mobile-nav" aria-label="Mobile navigation menu">
+
+        </nav>
     </div>
 </header>
 
@@ -42,7 +48,7 @@
                 <p class="hero-eyebrow">New arrivals this week</p>
                 <h1 class="hero-headline">Cinema for the Curious Mind</h1>
                 <p class="hero-sub">Rare, high-quality films — handpicked to support independent filmmakers and film lovers alike.</p>
-                <button>Start Watching</button>
+                <button class="primary-button">Start Watching</button>
             </div>
         </div>
     </section>

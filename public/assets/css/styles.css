@@ -57,19 +57,23 @@ main {
 
 button {
     font-family: var(--font-body), sans-serif;
+    border: none;
+}
+
+.primary-button {
+    font-family: var(--font-body), sans-serif;
     text-transform: uppercase;
-    font-size: inherit;
     font-weight: 600;
     letter-spacing: 2px;
     height: 3rem;
     width: auto;
-    background-color: var(--color-primary);
     border: none;
     border-radius: 4px;
     padding-inline: 1rem;
+    background-color: var(--color-primary);
 }
 
-button:hover {
+.primary-button:hover {
 }
 
 .site-header {
@@ -86,7 +90,11 @@ button:hover {
     aspect-ratio: 2;
 }
 
-.nav-links {
+.desktop-nav {
+    display: block;
+}
+
+.desktop-nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -112,16 +120,13 @@ button:hover {
     font-weight: 600;
 }
 
-.nav-toggle {
+.mobile-nav-toggle {
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 0.5px solid var(--color-border);
 }
 
 .mobile-nav {
-}
-
-.mobile-nav ul {
-}
-
-.mobile-nav ul li a {
 }
 
 .page-wrapper {
@@ -300,29 +305,34 @@ textarea {
     display: none;
 }
 
-/*@media (max-width: 1024px) {
-    .card-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+@media (max-width: 1024px) {
+
 }
 
 @media (max-width: 768px) {
-    .card-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}*/
+
+}
 
 @media (max-width: 480px) {
     :root {
         font-size: 14px;
     }
-    
-    /*.card-grid {
-        grid-template-columns: 1fr;
-    }*/
+
+    .primary-button {
+        height: 2.75rem;
+    }
+
+    .desktop-nav {
+        display: none;
+    }
+
+    .hero-headline {
+        font-size: 3rem;
+    }
 
     .top-rated-movies-section-header {
         flex-direction: column;
         gap: 0.5rem;
     }
+
 }
