@@ -5,7 +5,6 @@ export class MovieCardRenderer {
         this.moviesContainer = moviesContainer;
         this.movies = movies;
         this.init();
-        document.getElementById('loading').remove();
     }
 
     init() {
