@@ -11,7 +11,7 @@ export class MovieCardRenderer {
         this.moviesContainer.innerHTML = this.movies.map((movie, index) => `
             <div class="card">
                 <a href="movie.html?id=${movie.id}">
-                    <img src="${movie.image.url?.length > 0 ? movie.image.url : ''}" alt="${movie.image.alt?.length > 0 ? movie.image.alt : movie.title} movie cover image" />
+                    <img src="${movie.image.url?.length > 0 ? movie.image.url : ''}" alt="${movie.image.alt?.length > 0 ? movie.image.alt : ''}" />
                 </a>
                 <div class="card-tag">${movie.genre}</div>
                 <div class="card-content">
