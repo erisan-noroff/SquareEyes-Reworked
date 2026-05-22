@@ -100,7 +100,7 @@ button {
     display: flex;
     gap: 2rem;
     font-size: 1.125rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 }
 
 .nav-link {
@@ -133,7 +133,8 @@ button {
     flex-direction: column;
     align-items: flex-end;
     gap: 0.25rem;
-    font-size: 1.125rem;
+    font-size: 1rem;
+    letter-spacing: 2px;
     padding-block: 0.25rem;
     padding-inline: 0;
     width: 100%;
@@ -175,7 +176,7 @@ button {
     width: 100%;
     max-width: 37.5rem;
     height: 100%;
-    background: rgba(0, 0, 0, 0.66);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.66) 100%, transparent);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -183,6 +184,7 @@ button {
 }
 
 .hero-content {
+    max-width: 29.5rem;
     color: var(--color-background);
 }
 
@@ -329,38 +331,16 @@ textarea {
 }
 
 @media (max-width: 1024px) {
-
+    .image-overlay {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
-
-}
-
-@media (max-width: 480px) {
-    :root {
-        font-size: 14px;
-    }
-
-    .site-header {
-        padding: 4.25rem 1rem 1rem 1rem;
-    }
-
-    .logo img {
-        width: 9.75rem;
-    }
-    
-    .material-icons {
-        font-size: 1.25rem;    
-    }
-
-    .primary-button {
-        height: 2.75rem;
-    }
-
     .desktop-nav {
         display: none;
     }
-    
+
     .mobile-nav-toggle {
         display: flex;
         align-items: center;
@@ -370,7 +350,7 @@ textarea {
         border: 1px solid var(--color-border);
         background-color: var(--color-background);
     }
-    
+
     .mobile-nav {
         width: 100%;
         padding-top: 0.5rem;
@@ -384,6 +364,28 @@ textarea {
         padding-right: 0.5rem;
         border-bottom: none;
         border-right: 3px solid var(--color-primary);
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 9.75rem;
+    }
+
+    .site-header {
+        padding: 4.25rem 1rem 1rem 1rem;
+    }
+    
+    .material-icons {
+        font-size: 1.25rem;    
+    }
+
+    .primary-button {
+        height: 2.75rem;
     }
 
     .hero-headline {
