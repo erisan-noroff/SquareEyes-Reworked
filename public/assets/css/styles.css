@@ -198,12 +198,16 @@ button {
     padding-bottom: var(--space-3);
 }
 
-.hero-eyebrow {
+.eyebrow {
     color: var(--color-primary);
     font-family: var(--font-body), sans-serif;
+    font-size: 0.875rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+.hero-eyebrow {
     padding-bottom: var(--space-2);
 }
 
@@ -283,12 +287,33 @@ button {
 }
 
 .promo-banner {
+    display: flex;
 }
 
 .promo-content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-text);
+    color: var(--color-background);
+    flex: 1;
+    gap: var(--space-5);
+    padding-inline: var(--space-6);
+    padding-block: var(--space-5);
+    max-width: 29.625rem;
+}
+
+.promo-content .primary-button {
+    width: fit-content;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
 }
 
 .promo-image {
+    background-image: url('../images/Banner.jpg');
+    background-size: cover;
+    background-position: center 30%;
+    flex: 1;
 }
 
 .newsletter {
@@ -372,6 +397,14 @@ textarea {
         border-bottom: none;
         border-right: 3px solid var(--color-primary);
     }
+
+    .promo-content {
+        max-width: 100%;
+    }
+    
+    .promo-image {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -404,5 +437,4 @@ textarea {
         align-items: flex-start;
         gap: var(--space-2);
     }
-
 }
