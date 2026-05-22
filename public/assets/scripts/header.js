@@ -1,6 +1,5 @@
 class Header {
     static init() {
-        console.log('Header init');
         this.renderHeader();
     }
 
