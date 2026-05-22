@@ -81,6 +81,7 @@ button {
     width: 100%;
     padding: 1rem 4rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
@@ -119,20 +120,36 @@ button {
 }
 
 .mobile-nav-toggle {
-    width: 2.75rem;
-    height: 2.75rem;
-    border: 0.5px solid var(--color-border);
+    display: none;
 }
 
 .mobile-nav {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.5rem;
-    border-bottom: 0.5px solid var(--color-border);
+    display: none;
 }
 
-.mobile-nav > .nav-link {
-    border: 1px solid red;
+.mobile-nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.25rem;
+    font-size: 1.125rem;
+    padding-block: 0.25rem;
+    padding-inline: 0;
+    width: 100%;
+}
+
+.mobile-nav-links li {
+    width: 100%;
+}
+
+.mobile-nav .nav-link {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 3rem;
+    border-bottom: 1px solid var(--color-border);
+    gap: 0.25rem;
 }
 
 .page-wrapper {
@@ -324,8 +341,16 @@ textarea {
         font-size: 14px;
     }
 
+    .site-header {
+        padding: 4.25rem 1rem 1rem 1rem;
+    }
+
     .logo img {
         width: 9.75rem;
+    }
+    
+    .material-icons {
+        font-size: 1.25rem;    
     }
 
     .primary-button {
@@ -335,6 +360,31 @@ textarea {
     .desktop-nav {
         display: none;
     }
+    
+    .mobile-nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.75rem;
+        height: 2.75rem;
+        border: 1px solid var(--color-border);
+        background-color: var(--color-background);
+    }
+    
+    .mobile-nav {
+        width: 100%;
+        padding-top: 0.5rem;
+    }
+
+    .mobile-nav.is-open {
+        display: flex;
+    }
+
+    .nav-link-active {
+        padding-right: 0.5rem;
+        border-bottom: none;
+        border-right: 3px solid var(--color-primary);
+    }
 
     .hero-headline {
         font-size: 3rem;
@@ -342,6 +392,7 @@ textarea {
 
     .top-rated-movies-section-header {
         flex-direction: column;
+        align-items: flex-start;
         gap: 0.5rem;
     }
 
