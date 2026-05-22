@@ -360,6 +360,10 @@ textarea {
         display: flex;
     }
 
+    .logo img {
+        width: 13.5rem;
+    }
+
     .nav-link-active {
         padding-right: 0.5rem;
         border-bottom: none;
