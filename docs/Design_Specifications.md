@@ -94,9 +94,9 @@ typography, colour palette, spacing, and component specifications for the Square
 
 **Font:** Bebas Neue (display)
 
-|                | Desktop                                                       | Mobile                                                     |
-|----------------|---------------------------------------------------------------|------------------------------------------------------------|
-| **Navigation** | Semibold (600), 18px (1.125rem), 1.5px (8.33%) letter-spacing | Semibold (600), 16px (1rem), 1.5px (9.375%) letter-spacing |
+|                | Desktop                                                      | Mobile                                                   |
+|----------------|--------------------------------------------------------------|----------------------------------------------------------|
+| **Navigation** | Semibold (600), 18px (1.125rem), 2px (11.11%) letter-spacing | Semibold (600), 16px (1rem), 2px (14.29%) letter-spacing |
 
 ### Body
 
