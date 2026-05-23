@@ -85,7 +85,7 @@ button {
     background: var(--color-background);
     color: var(--color-text);
     border-color: var(--color-border);
-    height: 2.25rem;
+    height: 2.5rem;
     padding-inline: var(--space-3);
 }
 
