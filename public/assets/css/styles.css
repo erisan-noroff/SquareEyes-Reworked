@@ -227,7 +227,7 @@ button {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 155px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(155px, calc((100% - 3 * var(--space-3)) / 4))), 1fr));
     gap: var(--space-3);
 }
 
