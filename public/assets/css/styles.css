@@ -19,12 +19,12 @@ h1, h2, .hero-headline {
 
 h1 {
     font-size: 3.5rem;
-    letter-spacing: var(--letter-spacing-md);
+    letter-spacing: var(--letter-space-1);
 }
 
 h2 {
     font-size: 2.5rem;
-    letter-spacing: var(--letter-spacing-md);
+    letter-spacing: var(--letter-space-1);
 }
 
 p {
@@ -32,8 +32,7 @@ p {
 }
 
 label {
-    font-weight: 700;
-    font-family: var(--font-body), sans-serif;
+     font-weight: 600;
 }
 
 a {
@@ -64,11 +63,11 @@ button {
     font-family: var(--font-body), sans-serif;
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-space-1);
     height: 3rem;
     width: auto;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     padding-inline: var(--space-3);
     background-color: var(--color-primary);
 }
@@ -100,7 +99,7 @@ button {
     display: flex;
     gap: var(--space-5);
     font-size: 1.125rem;
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-space-1);
 }
 
 .nav-link {
@@ -135,7 +134,7 @@ button {
     align-items: flex-end;
     gap: var(--space-1);
     font-size: 1rem;
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-space-1);
     padding-block: var(--space-1);
     padding-inline: 0;
     width: 100%;
@@ -194,7 +193,7 @@ button {
 .hero-headline {
     font-family: var(--font-display), sans-serif;
     font-size: 4.5rem;
-    letter-spacing: 2px;
+    letter-spacing: var(--letter-space-1);
     padding-bottom: var(--space-3);
 }
 
@@ -204,7 +203,7 @@ button {
     font-size: 0.875rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: var(--letter-space-2);
 }
 
 .hero-eyebrow {
@@ -270,10 +269,12 @@ button {
     align-items: center;
     height: 1.625rem;
     padding: var(--space-1);
+    font-size: 0.875rem;
+    font-weight: 600;
     color: var(--color-background);
     background-color: var(--color-text);
     width: fit-content;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .card-prices {
@@ -317,26 +318,64 @@ button {
 }
 
 .newsletter {
+    background-color: var(--color-text);
 }
 
-.newsletter-inner {
+.newsletter-content {
+    display: flex;
+    flex-direction: row;
+    gap: var(--space-5);
+    align-items: center;
 }
 
 .newsletter-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.newsletter-text h2 {
+    color: var(--color-background);
+}
+
+.newsletter-subtext {
+    color: var(--color-dark-text-muted);
 }
 
 .newsletter-form {
+    display: flex;
+    gap: var(--space-3);
 }
 
-.newsletter-form input {
+.input-text {
+    background: #FFFFFF;
+    padding-inline: var(--space-3);
+    border: 1px solid var(--color-border);
+    border-radius: 0.25rem;
 }
 
-.contact-wrapper, .checkout-wrapper {
-
+.input-text::placeholder {
+    color: var(--color-text-muted);
 }
 
-input,
-textarea {
+.input-text:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 0;
+}
+
+.input-regular {
+    height: 3rem;
+}
+
+.input-area {
+    padding-block: var(--space-3);
+    resize: none;
+}
+
+.copyright {
+    font-size: 0.875rem;
+    display: flex;
+    justify-content: center;
 }
 
 .filter-bar {
@@ -405,6 +444,15 @@ textarea {
     .promo-image {
         display: none;
     }
+    
+    .newsletter-content {
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    .newsletter-form {
+        width: 100%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -419,13 +467,25 @@ textarea {
     .site-header {
         padding: 4.25rem 1rem 1rem 1rem;
     }
-    
+
     .material-icons {
-        font-size: 1.25rem;    
+        font-size: 1.25rem;
     }
 
     .primary-button {
         height: 2.75rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 
     .hero-headline {
