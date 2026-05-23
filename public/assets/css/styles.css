@@ -66,13 +66,15 @@ button {
     letter-spacing: var(--letter-space-1);
     height: 3rem;
     width: auto;
-    border: none;
+    border: 0.25rem solid transparent;
     border-radius: 0.25rem;
     padding-inline: var(--space-3);
     background-color: var(--color-primary);
 }
 
 .primary-button:hover {
+    background-color: var(--color-background);
+    border-color: var(--color-primary);
 }
 
 .site-header {
