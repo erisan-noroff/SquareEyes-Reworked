@@ -1,109 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description"
           content="Browse our full collection of high-quality films handpicked to support independent filmmakers. Filter by genre and find your next favourite movie.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Square Eyes - Our Collection</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Assistant:wght@300;400;600&display=swap"
-          rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/scripts/header.js" defer></script>
+    <script src="assets/scripts/footer.js" defer></script>
     <script src="assets/scripts/movies.js" type="module" defer></script>
     <script src="assets/scripts/movie-card-renderer.js" type="module" defer></script>
 </head>
-
-<body>
-<header>
-    <a href="index.html" class="logo" aria-label="Square Eyes home">
-        <img src="assets/images/SquareEyes_Logo.png" alt="Square Eyes logo">
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="movies.html">Movies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li>
-                <a href="checkout.html" aria-label="Cart">
-                    <!-- cart svg -->
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
-        <!-- hamburger icon -->
-    </button>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="movies.html">Movies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="checkout.html">Cart</a></li>
-        </ul>
-    </nav>
-</header>
-
+<body data-page="movies">
+<header></header>
 <main>
     <div class="page-wrapper">
-        <div class="section-header">
-            <h1>Our Collection</h1>
-            <button class="btn filter-toggle" id="filter-toggle" type="button" aria-label="Toggle filter drop-down menu"
-                    aria-expanded="false" aria-controls="filter-dropdown">
-                <!-- filter icon -->
-                Filter by Genre
-            </button>
-        </div>
-        <div class="filter-bar" id="filter-dropdown" hidden>
-            <ul>
-                <li>
-                    <button type="button" data-filter="none">Show All</button>
-                </li>
-                <li>
-                    <button type="button" data-filter="action">Action</button>
-                </li>
-                <li>
-                    <button type="button" data-filter="comedy">Comedy</button>
-                </li>
-                <li>
-                    <button type="button" data-filter="drama">Drama</button>
-                </li>
-                <li>
-                    <button type="button" data-filter="horror">Horror</button>
-                </li>
-                <li>
-                    <button type="button" data-filter="kids">Kids</button>
-                </li>
-            </ul>
-        </div>
-        <p id="loading">Loading movies...</p>
-        <div class="card-grid" id="movies-container">
-            <!-- Cards injected by JS -->
-        </div>
+        <section class="section-content">
+            <div class="movies-section-header">
+                <h1>Our collection</h1>
+                <div class="movies-filter-wrapper">
+                    <button type="button" class="btn btn-primary btn-movie-filter" id="movies-filter-toggle"
+                            aria-label="Toggle filter drop-down menu"
+                            aria-expanded="false" aria-controls="movies-filter-dropdown">
+                        <span class="material-icons">filter_alt</span> Filter by genre
+                    </button>
+                    <div class="movies-filter-dropdown" id="movies-filter-dropdown" hidden>
+                        <ul>
+                            <li>
+                                <button class="btn btn-filter btn-filter-active" type="button" data-filter="none">
+                                    Show All
+                                </button>
+                            </li>
+                            <li>
+                                <button class="btn btn-filter" type="button" data-filter="action">Action</button>
+                            </li>
+                            <li>
+                                <button class="btn btn-filter" type="button" data-filter="comedy">Comedy</button>
+                            </li>
+                            <li>
+                                <button class="btn btn-filter" type="button" data-filter="drama">Drama</button>
+                            </li>
+                            <li>
+                                <button class="btn btn-filter" type="button" data-filter="horror">Horror</button>
+                            </li>
+                            <li>
+                                <button class="btn btn-filter" type="button" data-filter="kids">Kids</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card-grid" id="movies-container">
+                <p id="loading">Fetching data, please wait...</p>
+                <!-- Cards injected by JS -->
+            </div>
+        </section>
     </div>
 </main>
-
-<footer>
-    <div class="newsletter">
-        <div class="page-wrapper newsletter-inner">
-            <div class="newsletter-text">
-                <p class="eyebrow">Stay in the loop</p>
-                <h2>New movie, every week</h2>
-                <p>We add fresh titles weekly. Be the first to know!</p>
-            </div>
-            <form class="newsletter-form" aria-label="Newsletter signup">
-                <input type="email" placeholder="name@example.com" aria-label="Email address">
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © 2024 Square Eyes</p>
-    </div>
-</footer>
+<footer></footer>
 </body>
 </html>

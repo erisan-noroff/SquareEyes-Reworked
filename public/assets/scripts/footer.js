@@ -4,11 +4,8 @@ class Footer {
     }
 
     static renderFooter() {
-        const body = document.querySelector('body');
-        if (!body) return;
-        
-        const footer = document.createElement('footer');
-        body.append(footer);
+        const footer = document.querySelector('footer');
+        if (!footer) return;
         
         const newsletter = document.createElement('div');
         newsletter.className = 'newsletter';
@@ -48,7 +45,7 @@ class Footer {
         subscribeEmailInput.ariaLabel = 'Email';
         
         const subscribeButton = document.createElement('button');
-        subscribeButton.className = 'primary-button';
+        subscribeButton.classList.add('btn', 'btn-primary');
         subscribeButton.textContent = 'Subscribe';
         
         subscribeForm.append(subscribeEmailInput, subscribeButton);

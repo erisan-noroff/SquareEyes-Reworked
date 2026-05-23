@@ -7,18 +7,22 @@ class MoviesList {
             const response = await new ApiClient().get('');
             // Sorted by rating in descending order (highest to lowest).
             this.sortedMovies = response.data.sort((a, b) => b.rating - a.rating);
-            this.moviesContainer = document.getElementById('movies-container');
-            this.movieCardRenderer = new MovieCardRenderer(this.moviesContainer, this.sortedMovies);
-            this.addToggleFilterMenuListener();
+            setTimeout(() => {
+                this.moviesContainer = document.getElementById('movies-container');
+                this.movieCardRenderer = new MovieCardRenderer(this.moviesContainer, this.sortedMovies);
+            }, 500);
         } catch {
             const loadingIndicator = document.getElementById('loading');
-            loadingIndicator.innerText = 'Failed to load movies. Please try to refresh the page.';
+            if (!loadingIndicator) alert('Failed to load movies. Please try to refresh the page.');
+            loadingIndicator.textContent = 'Failed to load movies. Please try to refresh the page.';
         }
+        
+        this.addToggleFilterMenuListener();
     }
 
     addToggleFilterMenuListener() {
-        const filterBtn = document.getElementById('filter-toggle');
-        const filterDropdown = document.getElementById('filter-dropdown');
+        const filterBtn = document.getElementById('movies-filter-toggle');
+        const filterDropdown = document.getElementById('movies-filter-dropdown');
 
         filterBtn.addEventListener('click', () => {
             const expanded = filterBtn.getAttribute('aria-expanded') === 'true';
@@ -30,7 +34,13 @@ class MoviesList {
             const filterOption = e.target.closest('[data-filter]');
             if(!filterOption)
                 return;
-
+            
+            const activeBtnClass = 'btn-filter-active';
+            const previouslySelectedFilter = document.querySelector(`.${activeBtnClass}`);
+            if (previouslySelectedFilter)
+                previouslySelectedFilter.classList.remove(activeBtnClass);
+            
+            filterOption.classList.add(activeBtnClass);
             const selectedFilter = filterOption.getAttribute('data-filter');
             this.movieCardRenderer.movies = selectedFilter === 'none'
                 ? this.sortedMovies

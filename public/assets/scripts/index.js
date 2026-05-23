@@ -12,7 +12,7 @@ class HighestRatedMoviesList {
                 new MovieCardRenderer(this.moviesContainer, this.sortedMovies);
             }, 500)
         } catch {
-            const loadingIndicator = document.querySelector('#loading');
+            const loadingIndicator = document.getElementById('loading');
             if (!loadingIndicator) alert('Failed to load movies. Please try to refresh the page.');
             loadingIndicator.textContent = 'Failed to load movies. Please try to refresh the page.';
         }
