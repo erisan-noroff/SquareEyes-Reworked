@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="description"
@@ -15,39 +14,8 @@
     <script src="assets/scripts/movies.js" type="module" defer></script>
     <script src="assets/scripts/movie-card-renderer.js" type="module" defer></script>
 </head>
-
-<body>
-<header>
-    <a href="index.html" class="logo" aria-label="Square Eyes home">
-        <img src="assets/images/SquareEyes_Logo.png" alt="Square Eyes logo">
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="movies.html">Movies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li>
-                <a href="checkout.html" aria-label="Cart">
-                    <!-- cart svg -->
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-nav">
-        <!-- hamburger icon -->
-    </button>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="movies.html">Movies</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="checkout.html">Cart</a></li>
-        </ul>
-    </nav>
-</header>
-
+<body data-page="movies">
+<header></header>
 <main>
     <div class="page-wrapper">
         <div class="section-header">
@@ -86,24 +54,6 @@
         </div>
     </div>
 </main>
-
-<footer>
-    <div class="newsletter">
-        <div class="page-wrapper newsletter-inner">
-            <div class="newsletter-text">
-                <p class="eyebrow">Stay in the loop</p>
-                <h2>New movie, every week</h2>
-                <p>We add fresh titles weekly. Be the first to know!</p>
-            </div>
-            <form class="newsletter-form" aria-label="Newsletter signup">
-                <input type="email" placeholder="name@example.com" aria-label="Email address">
-                <button type="submit" class="btn">Subscribe</button>
-            </form>
-        </div>
-    </div>
-    <div class="copyright">
-        <p>Copyright © 2024 Square Eyes</p>
-    </div>
-</footer>
+<footer></footer>
 </body>
 </html>
