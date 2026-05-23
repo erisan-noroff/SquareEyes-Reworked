@@ -45,7 +45,7 @@ class Footer {
         subscribeEmailInput.ariaLabel = 'Email';
         
         const subscribeButton = document.createElement('button');
-        subscribeButton.className = 'primary-button';
+        subscribeButton.classList.add('btn', 'btn-primary');
         subscribeButton.textContent = 'Subscribe';
         
         subscribeForm.append(subscribeEmailInput, subscribeButton);

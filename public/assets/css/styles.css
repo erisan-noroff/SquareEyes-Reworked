@@ -57,25 +57,51 @@ main {
 button {
     font-family: var(--font-body), sans-serif;
     border: none;
+    cursor: pointer;
 }
 
-.primary-button {
-    font-family: var(--font-body), sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
+.btn {
     letter-spacing: var(--letter-space-1);
-    height: 3rem;
-    width: auto;
     border: 0.25rem solid transparent;
     border-radius: 0.25rem;
-    padding-inline: var(--space-3);
-    background-color: var(--color-primary);
 }
 
-.primary-button:hover {
+.btn-primary {
+    text-transform: uppercase;
+    font-weight: 600;
+    background: var(--color-primary);
+    color: var(--color-text);
+    height: 3rem;
+    padding-inline: var(--space-3);
+}
+
+.btn-primary:hover {
     background-color: var(--color-background);
     border-color: var(--color-primary);
     cursor: pointer;
+}
+
+.btn-filter {
+    background: var(--color-background);
+    color: var(--color-text);
+    border-color: var(--color-border);
+    height: 2.25rem;
+    padding-inline: var(--space-3);
+}
+
+.btn-filter-active {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.btn-added-to-cart {
+    background-color: var(--color-success);
+}
+
+.btn-added-to-cart:hover {
+    background-color: var(--color-danger);
+    border-color: transparent;
+    color: var(--color-background);
 }
 
 .site-header {
@@ -217,11 +243,6 @@ button {
     padding-bottom: var(--space-5);
 }
 
-.top-rated-movies-section-header {
-    display: flex;
-    justify-content: space-between;
-}
-
 .section-content {
     display: flex;
     flex-direction: column;
@@ -230,7 +251,7 @@ button {
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(155px, calc((100% - 3 * var(--space-3)) / 4))), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, max(155px, calc((100% - 3 * var(--space-3)) / 4))), 1fr));
     gap: var(--space-3);
 }
 
@@ -306,7 +327,7 @@ button {
     max-width: 29.625rem;
 }
 
-.promo-content .primary-button {
+.promo-content .btn-primary {
     width: fit-content;
     color: var(--color-text);
     display: flex;
@@ -382,10 +403,36 @@ button {
     padding-block: var(--space-3);
 }
 
-.filter-bar {
+.movies-filter-wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
-.filter-dropdown {
+.movies-filter-dropdown {
+    width: 100%;
+}
+
+.movies-section-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.btn-movie-filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+}
+
+.movies-filter-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    padding-inline: var(--space-2);
+    padding-block: var(--space-2);
+    list-style: none;
 }
 
 .movie-detail {
@@ -496,7 +543,7 @@ button {
         font-size: 3rem;
     }
 
-    .top-rated-movies-section-header {
+    .movies-section-header {
         flex-direction: column;
         align-items: flex-start;
         gap: var(--space-2);

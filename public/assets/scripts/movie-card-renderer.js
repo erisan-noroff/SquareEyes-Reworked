@@ -21,19 +21,31 @@ export class MovieCardRenderer {
                         ${this.renderPrice(movie)}
                     </div>
                 </div>
-                <button type="button" data-i="${index}" class="primary-button ${cartInstance.cartItems[movie.title.toLowerCase()] ? 'remove-from-cart-button' : ''}">
-                ${!cartInstance.cartItems[movie.title.toLowerCase()] ? 'add to cart' : 'remove from cart'}
+                <button type="button" data-i="${index}" class="btn btn-primary cart-button ${cartInstance.cartItems[movie.title.toLowerCase()] ? 'btn-added-to-cart' : ''}">
+                ${!cartInstance.cartItems[movie.title.toLowerCase()] ? 'add to cart' : 'added to cart'}
                 </button>
             </div>
         `).join('');
-        
-        const cartButtons = this.moviesContainer.getElementsByClassName('button');
-        for(let i = 0; i < cartButtons.length; i++) {
+
+        const cartButtons = this.moviesContainer.querySelectorAll('.cart-button');
+        for (let i = 0; i < cartButtons.length; i++) {
             cartButtons[i].addEventListener('click', (e) => {
                 const movie = this.movies[e.target.dataset.i];
                 cartInstance.addOrRemoveFromCart(movie);
-                e.target.classList.toggle('remove-from-cart-button');
-                e.target.innerText = !cartInstance.cartItems[movie.title.toLowerCase()] ? 'add to cart' : 'remove from cart';
+                e.target.classList.toggle('btn-added-to-cart');
+                e.target.innerText = !cartInstance.cartItems[movie.title.toLowerCase()] ? 'add to cart' : 'added to cart';
+            });
+
+            cartButtons[i].addEventListener('mouseover', (e) => {
+                if (!e.target.classList.contains('btn-added-to-cart'))
+                    return;
+
+                e.target.textContent = 'remove from cart';
+            });
+
+            cartButtons[i].addEventListener('mouseleave', (e) => {
+                const movie = this.movies[e.target.dataset.i];
+                e.target.textContent = !cartInstance.cartItems[movie.title.toLowerCase()] ? 'add to cart' : 'added to cart';
             });
         }
     }
@@ -41,7 +53,7 @@ export class MovieCardRenderer {
     renderPrice(movie) {
         if (!movie.onSale)
             return `<p class="card-price">${movie.price},-</p>`;
-        
+
         return `
           <div class="card-prices">
               <span class="card-price-sale">${movie.discountedPrice},-</span>
