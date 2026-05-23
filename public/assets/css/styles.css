@@ -75,6 +75,7 @@ button {
 .primary-button:hover {
     background-color: var(--color-background);
     border-color: var(--color-primary);
+    cursor: pointer;
 }
 
 .site-header {
