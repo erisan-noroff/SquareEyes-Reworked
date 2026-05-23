@@ -376,6 +376,7 @@ button {
     font-size: 0.875rem;
     display: flex;
     justify-content: center;
+    padding-block: var(--space-3);
 }
 
 .filter-bar {
