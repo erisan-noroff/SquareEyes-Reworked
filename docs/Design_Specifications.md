@@ -75,6 +75,11 @@ typography, colour palette, spacing, and component specifications for the Square
 - **Border:** #1B1B1A 1px
 - **Border radius:** 0.25rem
 
+### Active
+
+- **Colour:**: #FF9900
+- **Outline:** 2px FF9900
+
 ***
 
 ## Typography
@@ -113,7 +118,8 @@ typography, colour palette, spacing, and component specifications for the Square
 | **Price**            | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                         |
 | **Movie Title**      | Regular (400), 16px, uppercase                                          | Regular (400), 14px (0.875rem), uppercase                               |
 | **Form Label**       | Regular (400), 16px (1rem)                                              | Regular (400), 14px (0.875rem)                                          |
-| **Link**             | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                        |
+| **Link**             | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                         |
+| **Copyright**        | Regular (400), 14px (0.875rem)                                          | Regular (400), 14px (1rem)                                              | 
 
 ***
 
