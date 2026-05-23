@@ -117,7 +117,7 @@ typography, colour palette, spacing, and component specifications for the Square
 | **Discounted Price** | Regular (400), 16px (1rem), strikethrough, muted                        | Regular (400), 14px (0.875rem), strikethrough, muted                    |
 | **Price**            | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                         |
 | **Movie Title**      | Regular (400), 16px, uppercase                                          | Regular (400), 14px (0.875rem), uppercase                               |
-| **Form Label**       | Regular (400), 16px (1rem)                                              | Regular (400), 14px (0.875rem)                                          |
+| **Form Label**       | Semibold (600), 16px (1rem)                                             | Semibold (400), 14px (0.875rem)                                         |
 | **Link**             | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                         |
 | **Copyright**        | Regular (400), 14px (0.875rem)                                          | Regular (400), 14px (1rem)                                              | 
 
