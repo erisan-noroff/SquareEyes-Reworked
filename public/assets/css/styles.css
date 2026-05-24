@@ -78,7 +78,6 @@ button {
 .btn-primary:hover {
     background-color: var(--color-background);
     border-color: var(--color-primary);
-    cursor: pointer;
 }
 
 .btn-filter {
@@ -99,6 +98,11 @@ button {
 }
 
 .btn-added-to-cart:hover {
+    background-color: var(--color-background);
+    border-color: var(--color-success);
+}
+
+.btn-added-to-cart.btn-remove-from-cart {
     background-color: var(--color-danger);
     border-color: transparent;
     color: var(--color-background);
@@ -274,7 +278,6 @@ button {
 .card-content-row {
     display: flex;
     justify-content: space-between;
-    font-weight: 600;
     flex-wrap: wrap;
 }
 
@@ -288,25 +291,28 @@ button {
     aspect-ratio: 2/3;
 }
 
-.card-tag {
+.tag {
     display: flex;
     align-items: center;
     height: 1.625rem;
     padding: var(--space-1);
     font-size: 0.875rem;
-    font-weight: 600;
     color: var(--color-background);
     background-color: var(--color-text);
     width: fit-content;
     border-radius: 0.25rem;
 }
 
-.card-prices {
+.rating, .price-current {
+    font-weight: 600;
+}
+
+.prices {
     display: flex;
     gap: var(--space-1);
 }
 
-.card-price-original {
+.price-original {
     color: var(--color-text-muted);
     text-decoration: line-through;
 }
@@ -436,16 +442,46 @@ button {
 }
 
 .movie-detail {
+    display: grid;
+    gap: var(--space-5);
+    grid-template-columns: 31.25rem 1fr;
+    grid-template-rows: 1fr auto auto 1fr;
+    grid-template-areas:
+        "image ."
+        "image title"
+        "image content"
+        "image .";
 }
 
-.movie-info {
+.movie-detail-cover-image {
+    grid-area: image;
+    width: 100%;
+    aspect-ratio: 2/3;
 }
 
-.checkout-summary {
+.movie-title {
+    grid-area: title;
 }
 
-.hidden {
-    display: none;
+.movie-detail-content {
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.movie-detail-meta {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+}
+
+.movie-detail-meta p {
+    font-weight: 600;
+}
+
+.movie-detail-content .btn {
+    width: fit-content;
 }
 
 @media (max-width: 1024px) {
@@ -504,6 +540,15 @@ button {
     .newsletter-form {
         width: 100%;
     }
+
+    .movie-detail {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "image"
+            "content";
+    }
+
 }
 
 @media (max-width: 480px) {
