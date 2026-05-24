@@ -565,6 +565,12 @@ button {
     max-width: 65ch;
 }
 
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
 @media (max-width: 1024px) {
     .image-overlay {
         max-width: 100%;
@@ -683,5 +689,9 @@ button {
 
     .form-row {
         flex-direction: column;
+    }
+    
+    .text-block {
+        gap: var(--space-2);
     }
 }
