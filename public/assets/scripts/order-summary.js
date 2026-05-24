@@ -2,8 +2,14 @@ import { cartInstance } from './cart.js';
 
 export class OrderSummary {
     init() {
-        if (cartInstance.cartIsEmpty())
+        const cartItemsRow = document.querySelector('.order-summary-item-rows');
+        if (cartInstance.cartIsEmpty()) {
+            const emptyCart = document.createElement('div');
+            emptyCart.className = 'order-summary-empty-cart';
+            emptyCart.textContent = 'Nothing here yet!';
+            cartItemsRow.append(emptyCart);
             return;
+        }
         
         document.querySelector('.checkout-form')?.addEventListener('submit', (e) => {
             e.preventDefault();
@@ -13,7 +19,6 @@ export class OrderSummary {
         
         let totalPrice = 0;
 
-        const cartItemsRow = document.querySelector('.order-summary-item-rows');
         for (const cartItem of Object.values(cartInstance.cartItems)) {
             totalPrice += cartItem.moviePrice;
             
