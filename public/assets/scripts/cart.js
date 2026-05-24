@@ -9,7 +9,7 @@ export class Cart {
         const lowerCaseTitle = movie.title.toLowerCase();
         
         // Movie already exists in the cart, remove it.
-        if(this.cartItems[lowerCaseTitle]) {
+        if (this.cartItems[lowerCaseTitle]) {
             delete this.cartItems[lowerCaseTitle];
             localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
             return;
@@ -17,6 +17,14 @@ export class Cart {
         
         this.cartItems[lowerCaseTitle] = new CartItem(movie);
         localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+    }
+    
+    emptyCart() {
+        localStorage.removeItem('cartItems');
+    }
+    
+    cartIsEmpty() {
+        return Object.keys(cartInstance.cartItems).length === 0;
     }
 }
 
