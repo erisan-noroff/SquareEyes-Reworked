@@ -10,6 +10,7 @@ class Header {
         const logoHomeLink = document.createElement('a');
         logoHomeLink.className = 'logo';
         logoHomeLink.ariaLabel = 'Square Eyes home page';
+        logoHomeLink.href = 'index.html';
 
         const logo = document.createElement('img');
         logo.src = 'assets/images/SquareEyes_Logo.png';
