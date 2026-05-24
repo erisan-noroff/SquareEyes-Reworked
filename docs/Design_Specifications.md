@@ -11,7 +11,7 @@ typography, colour palette, spacing, and component specifications for the Square
 ### Brand
 
 - **Primary:** #FF9900
-- **Usage:** Buttons, links, hover states, active nav, ratings, badges
+- **Usage:** Buttons, active filter chips, links, hover states, active nav
 
 ### Text
 
@@ -34,6 +34,23 @@ typography, colour palette, spacing, and component specifications for the Square
 
 - **Colour:** #1B1B1A at 15% opacity
 - **Usage:** Card borders, input borders
+
+### Badges
+
+- **Background:** #1B1B1A
+- **Text:** #FCFBF4
+
+### Filter Buttons
+
+#### Default
+- **Background:** #FCFBF4
+- **Border:** #1B1B1A at 15% opacity
+- **Text:** #1B1B1A
+
+#### Active
+- **Background:** #FF9900
+- **Border:** #FF9900
+- **Text:** #1B1B1A
 
 ### States
 
@@ -77,7 +94,6 @@ typography, colour palette, spacing, and component specifications for the Square
 
 ### Active
 
-- **Colour:**: #FF9900
 - **Outline:** 2px FF9900
 
 ***
@@ -112,14 +128,15 @@ typography, colour palette, spacing, and component specifications for the Square
 | **Eyebrow (Hero)**   | Semibold (600), 16px (1rem), 3px (18.75%) letter-spacing, uppercase     | Semibold (600), 14px (0.875rem), 3px (21.43%) letter-spacing, uppercase |
 | **Eyebrow**          | Semibold (600), 14px (0.875rem), 3px (21.43%) letter-spacing, uppercase | Semibold (600), 14px (0.875rem), 3px (21.43%) letter-spacing, uppercase |
 | **Body**             | Regular (400), 16px (1rem)                                              | Regular (400), 14px (0.875rem)                                          |
-| **Buttons**          | Semibold (600), 16px (1rem), 2px (12.5%) letter-spacing, uppercase      | Semibold (600), 14px (0.875rem), 2px (14.29%) letter-spacing, uppercase |
+| **Primary Buttons**  | Semibold (600), 16px (1rem), 2px (12.5%) letter-spacing, uppercase      | Semibold (600), 14px (0.875rem), 2px (14.29%) letter-spacing, uppercase |
+| **Filter Buttons**   | Regular (400), 16px (1rem)                                              | Regular (400), 14px (0.875rem)                                          |
 | **Badge**            | Semibold (600), 14px (0.875rem)                                         | Semibold (600), 14px (0.875rem)                                         |
 | **Discounted Price** | Regular (400), 16px (1rem), strikethrough, muted                        | Regular (400), 14px (0.875rem), strikethrough, muted                    |
 | **Price**            | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                         |
-| **Movie Title**      | Regular (400), 16px, uppercase                                          | Regular (400), 14px (0.875rem), uppercase                               |
-| **Form Label**       | Semibold (600), 16px (1rem)                                             | Semibold (400), 14px (0.875rem)                                         |
+| **Movie Title**      | Regular (400), 16px (1rem), uppercase                                   | Regular (400), 14px (0.875rem), uppercase                               |
+| **Form Label**       | Semibold (600), 16px (1rem)                                             | Regular (400), 14px (0.875rem)                                          |
 | **Link**             | Semibold (600), 16px (1rem)                                             | Semibold (600), 14px (0.875rem)                                         |
-| **Copyright**        | Regular (400), 14px (0.875rem)                                          | Regular (400), 14px (1rem)                                              | 
+| **Copyright**        | Regular (400), 14px (0.875rem)                                          | Regular (400), 14px (0.875rem)                                          |
 
 ***
 

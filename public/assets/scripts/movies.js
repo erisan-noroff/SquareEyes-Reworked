@@ -1,20 +1,22 @@
 import { ApiClient } from './apiClient.js';
 import { MovieCardRenderer } from './movie-card-renderer.js';
+import { ErrorHandler } from './error-handler.js';
 
 class MoviesList {
     async init() {
         try {
             const response = await new ApiClient().get('');
+            if (!response)
+                return ErrorHandler.displayError();
+            
             // Sorted by rating in descending order (highest to lowest).
             this.sortedMovies = response.data.sort((a, b) => b.rating - a.rating);
             setTimeout(() => {
                 this.moviesContainer = document.getElementById('movies-container');
                 this.movieCardRenderer = new MovieCardRenderer(this.moviesContainer, this.sortedMovies);
             }, 500);
-        } catch {
-            const loadingIndicator = document.getElementById('loading');
-            if (!loadingIndicator) alert('Failed to load movies. Please try to refresh the page.');
-            loadingIndicator.textContent = 'Failed to load movies. Please try to refresh the page.';
+        } catch (e) {
+            ErrorHandler.displayError(e);
         }
         
         this.addToggleFilterMenuListener();

@@ -1,5 +1,5 @@
 export class ErrorHandler {
-    static displayError(errorMessage) {
+    static displayError(errorMessage = 'Unexpected error occurred when retrieving data') {
         const loadingIndicator = document.getElementById('loading');
         errorMessage = `${errorMessage}.<br/>Please try again later. Contact us if the issue persists.`;
         
