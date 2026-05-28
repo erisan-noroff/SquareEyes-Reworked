@@ -1,14 +1,17 @@
 # SquareEyes (Reworked)
 
-This is a revised design version of https://github.com/erisan-noroff/squareeyes-api-implementation, my first design assignment at Noroff with API implementation.
+This is a revised design version of both [SquareEyes design](https://github.com/erisan-noroff/squareeyes) and [SquareEyes with API implementation](https://github.com/erisan-noroff/squareeyes-api-implementation).
 
-<img width="914" height="485" alt="image" src="https://github.com/user-attachments/assets/42ec0e3a-943b-447a-a88c-40b67cb0b8b1" />
+<img width="2013" height="1023" alt="image" src="https://github.com/user-attachments/assets/dde9e9f7-2b50-4836-97ec-9492b571025f" />
+
 
 ## Description
 
 SquareEyes is an e-commerce store for fellow movie enthusiasts. Featuring the hottest movies at very competitive prices.
 
-The initial design (v1, linked above) was my first ever design and assignment here at Noroff. I took all the experience that I have gained from Noroff and some from work to make a new, much cleaner design.
+The initial design (v1, linked above) was my first ever design and assignment here at Noroff. I took all the experience that I have gained from Noroff and some from work to make a new, much cleaner design. A significant improvement to the original layout.
+
+Check out the [Live Demo](https://erisan-noroff.github.io/SquareEyes-Reworked/)
 
 ## Built With
 
