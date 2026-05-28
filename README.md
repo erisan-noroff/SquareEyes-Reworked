@@ -11,7 +11,12 @@ SquareEyes is an e-commerce store for fellow movie enthusiasts. Featuring the ho
 
 The initial design (v1, linked above) was my first ever design and assignment here at Noroff. I took all the experience that I have gained from Noroff and some from work to make a new, much cleaner design. A significant improvement to the original layout.
 
-Check out the [Live Demo](https://erisan-noroff.github.io/SquareEyes-Reworked/)
+## Features
+- Fully responsive design, works on all screen sizes
+- Accessible markup with semantic HTML and ARIA labels
+- Dynamic movie listings fetched from the Noroff API
+- Cart functionality with persistent state via localStorage
+- Modern, redesigned UI built on experience gained from original design
 
 ## Built With
 
